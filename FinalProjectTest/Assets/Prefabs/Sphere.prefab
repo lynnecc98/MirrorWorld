@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23878355212489164}
   - component: {fileID: 135475569315877678}
   - component: {fileID: 54919422057897226}
-  - component: {fileID: 114531457509715822}
+  - component: {fileID: 114201496199998054}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -99,9 +99,9 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &114531457509715822
+--- !u!114 &114201496199998054
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebdf302f123edd4ab13c3024aa17164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerShot: 25
+  damagePerShot: 20
   alive: 2.5
 --- !u!135 &135475569315877678
 SphereCollider:
