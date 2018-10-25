@@ -2,31 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AttackType
-{
-    Normal,
-    Fire,
-    Water,
-    Grass
-};
 
 public class Attack : MonoBehaviour {
 
     public int damagePerShot = 25;
     public float timeBetweenBullets = 0.15f;
-    public float range = 100f;
 
-    public AttackType state = AttackType.Normal;
 
     public GameObject[] obj;
 
     int shootableMask;
     float timer;
 
+    elementType element;
+    Element curElement;
+
 
     void Awake()
     {
         shootableMask = LayerMask.GetMask("Shootable");
+        element = GetComponent<elementType>();
+        curElement = element.element;
     }
 
 
@@ -39,29 +35,9 @@ public class Attack : MonoBehaviour {
         {
             Shoot();
         }
-
-        if (Input.GetButton("Jump"))
-        {
-            if(state == AttackType.Normal)
-            {
-                state = AttackType.Fire;
-            }
-            else if (state == AttackType.Fire)
-            {
-                state = AttackType.Water;
-            }
-            else if (state == AttackType.Water)
-            {
-                state = AttackType.Grass;
-            }
-            else if (state == AttackType.Grass)
-            {
-                state = AttackType.Fire;
-            }
-        }
-
-
-
+        element = GetComponent<elementType>();
+        curElement = element.element;
+        print(element.element);
 
     }
 
@@ -72,23 +48,23 @@ public class Attack : MonoBehaviour {
         Quaternion curRot = this.transform.rotation;
         Vector3 curFor = this.transform.forward;
         GameObject select = obj[0];
-        switch (state) {
-            case AttackType.Normal:
+        switch (curElement) {
+            case Element.Neutral:
                 select = obj[0];
                 break;
-            case AttackType.Fire:
+            case Element.Red:
                 select = obj[1];
                 break;
-            case AttackType.Water:
+            case Element.Blue:
                 select = obj[2];
                 break;
-            case AttackType.Grass:
+            case Element.Green:
                 select = obj[3];
                 break;
         }
         GameObject objCur = (GameObject)Instantiate(select, curPos, curRot);
         Rigidbody objRig = objCur.GetComponent<Rigidbody>();
-        objRig.velocity = curFor * 5;
+        objRig.velocity = curFor * 10;
 
 
 

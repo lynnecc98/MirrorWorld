@@ -7,13 +7,16 @@ public class EnemyHealth : MonoBehaviour
     public int startingHealth = 100;
     public int currentHealth;
     public bool isDead = false;
-
+    public GameObject player;
+    elementType element;
+    ChangeType change;
 
 
     void Awake()
     {
-
         currentHealth = startingHealth;
+        element = GetComponent<elementType>();
+        change = player.GetComponent<ChangeType>();
     }
 
     void Update()
@@ -21,7 +24,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (isDead  == true)
         {
-            Destroy(gameObject, 2f);
+            Destroy(gameObject);
         }
     }
 
@@ -41,6 +44,18 @@ public class EnemyHealth : MonoBehaviour
     void Death()
     {
         isDead = true;
+        if (element.element == Element.Red)
+        {
+            change.red.addPoints(1);
+        }
+        if (element.element == Element.Blue)
+        {
+            change.blue.addPoints(1);
+        }
+        if (element.element == Element.Green)
+        {
+            change.green.addPoints(1);
+        }
     }
 
 
