@@ -10,7 +10,7 @@ public class CollectableKey : MonoBehaviour {
         Destroy(this.gameObject);
         if (c.attachedRigidbody){
             KeyCollector bc = c.attachedRigidbody.gameObject.GetComponent<KeyCollector>();
-            bc.ReceiveBall();
+            bc.ReceiveKey();
         }
     }
 }

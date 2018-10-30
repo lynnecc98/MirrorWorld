@@ -11,7 +11,7 @@ public class ObstacleInteraction : MonoBehaviour {
         if (c.attachedRigidbody)
         {
             KeyCollector bc = c.attachedRigidbody.gameObject.GetComponent<KeyCollector>();
-            if (bc.hasBall){
+            if (bc.hasKey){
                 Destroy(this.gameObject);
             }
         }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 //[RequireComponent(typeof(Animator))]
 public class KeyCollector : MonoBehaviour {
-    public bool hasBall = false;
+    public bool hasKey = false;
     public Rigidbody ballPrefab;
 
     private Animator anim;
@@ -31,8 +31,8 @@ public class KeyCollector : MonoBehaviour {
         //anim = GetComponent<Animator>();
     }
 
-    public void ReceiveBall() {
-        hasBall = true;
+    public void ReceiveKey() {
+        hasKey = true;
         //currBall = Instantiate<Rigidbody>(ballPrefab);
         //currBall.transform.parent = handHold;
         //currBall.transform.localPosition = Vector3.zero;
