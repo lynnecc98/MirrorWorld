@@ -37,7 +37,7 @@ public class Attack : MonoBehaviour {
         }
         element = GetComponent<elementType>();
         curElement = element.element;
-        print(element.element);
+        //print(element.element);
 
     }
 
