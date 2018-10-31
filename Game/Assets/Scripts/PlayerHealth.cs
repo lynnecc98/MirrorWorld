@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int startingHealth = 100;
     public int currentHealth;
     public bool isDead = false;
+    public Slider healthSlider;
 
 
 
@@ -30,6 +31,8 @@ public class PlayerHealth : MonoBehaviour
     {
 
         currentHealth -= amount;
+
+        healthSlider.value = currentHealth;
 
 
         if (currentHealth <= 0)

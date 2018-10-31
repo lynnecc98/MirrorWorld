@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChangeType : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class ChangeType : MonoBehaviour
     }
 
     public Type red, green, blue;
+    public Slider redSlider, blueSlider, greenSlider;
     public Material currentMaterial;
     public Material redM, greenM, blueM;
     elementType element;
@@ -50,20 +52,23 @@ public class ChangeType : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        redSlider.value = red.points;
+        blueSlider.value = blue.points;
+        greenSlider.value = green.points;
 
-        if (red.CompareTo(green) > 0 && red.CompareTo(blue) > 0)
+        if (red.points > blue.points && red.points > green.points)
         {
             Object.GetComponent<MeshRenderer>().material = redM;
             element.element = Element.Red;
             currentMaterial = redM;
         }
-        else if (green.CompareTo(red) > 0 && green.CompareTo(blue) > 0)
+        else if (green.points > blue.points && green.points > red.points)
         {
             Object.GetComponent<MeshRenderer>().material = greenM;
             element.element = Element.Green;
             currentMaterial = greenM;
         }
-        else if (blue.CompareTo(red) > 0 && blue.CompareTo(green) > 0)
+        else if (blue.points > red.points && blue.points > green.points)
         {
             // blue material
             Object.GetComponent<MeshRenderer>().material = blueM;
