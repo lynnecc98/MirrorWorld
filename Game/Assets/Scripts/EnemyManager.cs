@@ -33,10 +33,13 @@ public class EnemyManager : MonoBehaviour {
 
     public void Update()
     {
-        EnemyHealth health = currentObject.GetComponent<EnemyHealth>();
-        if(health.isDead == true)
+        if (making == false)
         {
-            count--;
+            EnemyHealth health = currentObject.GetComponent<EnemyHealth>();
+            if (health.isDead == true)
+            {
+                count--;
+            }
         }
     }
 
