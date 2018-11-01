@@ -7,7 +7,6 @@ public class EnemyHealth : MonoBehaviour
     public int startingHealth = 100;
     public int currentHealth;
     public bool isDead = false;
-    public GameObject player;
     elementType element;
     ChangeType change;
 
@@ -16,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = startingHealth;
         element = GetComponent<elementType>();
-        change = player.GetComponent<ChangeType>();
+        change = GameObject.FindGameObjectWithTag("Player").GetComponent<ChangeType>();
     }
 
     void Update()

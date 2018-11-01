@@ -9,7 +9,6 @@ public class EnemyAtk : MonoBehaviour {
     public float timeBetweenAttacks = 0.5f;
     public int attackDamage = 10;
 
-    public GameObject player;
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
     bool playerInRange;
@@ -17,13 +16,13 @@ public class EnemyAtk : MonoBehaviour {
 
     void Awake()
     {
-        playerHealth = player.GetComponent<PlayerHealth>();
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         enemyHealth = GetComponent<EnemyHealth>();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
         {
             playerInRange = true;
         }
@@ -32,7 +31,7 @@ public class EnemyAtk : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
         {
             playerInRange = false;
         }
