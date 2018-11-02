@@ -17,6 +17,7 @@ public class Attack : MonoBehaviour {
 
     elementType element;
     Element curElement;
+    Vector3 shift = new Vector3(0f, 0.5f, 0f);
 
 
     void Awake()
@@ -66,7 +67,7 @@ public class Attack : MonoBehaviour {
                 select = obj[3];
                 break;
         }
-        GameObject objCur = (GameObject)Instantiate(select, curPos+curFor, curRot);
+        GameObject objCur = (GameObject)Instantiate(select, curPos+curFor+shift, curRot);
         Rigidbody objRig = objCur.GetComponent<Rigidbody>();
         objRig.velocity = Vector3.Normalize(curFor) * 20;
 
