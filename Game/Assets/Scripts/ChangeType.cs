@@ -46,7 +46,7 @@ public class ChangeType : MonoBehaviour
         element = GetComponent<elementType>();
         // define the materials
         mats = new List<Material>(new Material[] { redM, greenM, blueM });
-        Object.GetComponent<MeshRenderer>().material = currentMaterial;
+        Object.GetComponent<SkinnedMeshRenderer>().material = currentMaterial;
     }
 
     // Update is called once per frame
@@ -58,25 +58,25 @@ public class ChangeType : MonoBehaviour
 
         if (red.points > blue.points && red.points > green.points)
         {
-            Object.GetComponent<MeshRenderer>().material = redM;
+            Object.GetComponent<SkinnedMeshRenderer>().material = redM;
             element.element = Element.Red;
             currentMaterial = redM;
         }
         else if (green.points > blue.points && green.points > red.points)
         {
-            Object.GetComponent<MeshRenderer>().material = greenM;
+            Object.GetComponent<SkinnedMeshRenderer>().material = greenM;
             element.element = Element.Green;
             currentMaterial = greenM;
         }
         else if (blue.points > red.points && blue.points > green.points)
         {
             // blue material
-            Object.GetComponent<MeshRenderer>().material = blueM;
+            Object.GetComponent<SkinnedMeshRenderer>().material = blueM;
             element.element = Element.Blue;
             currentMaterial = blueM;
         }
         else {
-            Object.GetComponent<MeshRenderer>().material = currentMaterial;
+            Object.GetComponent<SkinnedMeshRenderer>().material = currentMaterial;
         }
     }
 }
