@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23693928654030424}
   - component: {fileID: 114006868515734406}
   - component: {fileID: 135055285856849646}
+  - component: {fileID: 136672322345197514}
   - component: {fileID: 54886453606352290}
   - component: {fileID: 114328130062026766}
   - component: {fileID: 114701269846718884}
@@ -202,6 +203,19 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 2
+  m_Center: {x: 0, y: -0, z: 0}
+--- !u!136 &136672322345197514
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609622959851336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.6000001
+  m_Height: 2.1671238
+  m_Direction: 1
   m_Center: {x: 0, y: -0.00000005960466, z: 0}
 --- !u!195 &195682166294788638
 NavMeshAgent:

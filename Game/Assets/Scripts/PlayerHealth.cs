@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
         if (isDead == true)
         {
             Destroy(gameObject, 2f);
+            SceneManager.LoadScene("LoseScene");
         }
     }
 

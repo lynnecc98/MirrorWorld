@@ -25,6 +25,7 @@ public class RandomType : MonoBehaviour
         //Set the main Color of the Material to green
         rend.material.SetColor("_Color", colors[Random.Range(0, colors.Length)]);
 
+
         //Set the enum character type in other script
         if (rend.material.color == Color.red)
         {
