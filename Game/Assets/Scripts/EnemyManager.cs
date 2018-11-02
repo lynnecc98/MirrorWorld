@@ -33,7 +33,7 @@ public class EnemyManager : MonoBehaviour {
 
     public void Update()
     {
-        if (making == false)
+        if (currentObject != null)
         {
             EnemyHealth health = currentObject.GetComponent<EnemyHealth>();
             if (health.isDead == true)
@@ -42,5 +42,7 @@ public class EnemyManager : MonoBehaviour {
             }
         }
     }
+ 
+    
 
 }

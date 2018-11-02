@@ -8,7 +8,7 @@ public class ObstacleInteraction : MonoBehaviour {
     {
         //EventManager.TriggerEvent<BombBounceEvent, Vector3>(c.transform.position);
        
-        if (c.attachedRigidbody)
+        if (c.attachedRigidbody && c.attachedRigidbody.gameObject == GameObject.FindGameObjectWithTag("Player"))
         {
             KeyCollector bc = c.attachedRigidbody.gameObject.GetComponent<KeyCollector>();
             if (bc.hasKey){

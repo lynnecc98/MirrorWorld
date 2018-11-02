@@ -66,9 +66,10 @@ public class Attack : MonoBehaviour {
                 select = obj[3];
                 break;
         }
-        GameObject objCur = (GameObject)Instantiate(select, curPos, curRot);
+        GameObject objCur = (GameObject)Instantiate(select, curPos+curFor, curRot);
         Rigidbody objRig = objCur.GetComponent<Rigidbody>();
-        objRig.velocity = curFor * 10;
+        objRig.velocity = Vector3.Normalize(curFor) * 10;
+        print(curFor);
 
 
 

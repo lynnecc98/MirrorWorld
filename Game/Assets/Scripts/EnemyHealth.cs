@@ -20,7 +20,6 @@ public class EnemyHealth : MonoBehaviour
 
     void Update()
     {
-
         if (isDead  == true)
         {
             Destroy(gameObject);
@@ -40,20 +39,24 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void Death()
+    public void Death()
     {
         isDead = true;
+        
         if (element.element == Element.Red)
         {
             change.red.addPoints(1);
+            
         }
         if (element.element == Element.Blue)
         {
             change.blue.addPoints(1);
+            
         }
         if (element.element == Element.Green)
         {
             change.green.addPoints(1);
+            
         }
     }
 
