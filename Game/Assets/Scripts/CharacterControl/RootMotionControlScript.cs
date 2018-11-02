@@ -51,8 +51,8 @@ public class RootMotionControlScript : MonoBehaviour
     void Start()
     {
 		//example of how to get access to certain limbs
-        leftFoot = this.transform.Find("mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot");
-        rightFoot = this.transform.Find("mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot");
+        leftFoot = this.transform.Find("Character1_Reference/Character1_Hips/Character1_LeftUpLeg/Character1_LeftLeg/Character1_LeftFoot");
+        rightFoot = this.transform.Find("Character1_Reference/Character1_Hips/Character1_RightUpLeg/Character1_RightLeg/Character1_RightFoot");
 
         if (leftFoot == null || rightFoot == null)
             Debug.Log("One of the feet could not be found");

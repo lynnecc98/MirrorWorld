@@ -5,7 +5,7 @@ using UnityEngine;
 //[RequireComponent(typeof(Animator))]
 public class KeyCollector : MonoBehaviour {
     public bool hasKey = false;
-    public Rigidbody ballPrefab;
+   // public Rigidbody ballPrefab;
 
     private Animator anim;
     private Transform handHold;
