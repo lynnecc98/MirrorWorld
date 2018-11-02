@@ -12,7 +12,7 @@ public class ReflectionTrigger : MonoBehaviour {
     private void Start()
     {
         myElement = GetComponent<elementType>();
-        player = GameObject.Find("PlayableCharacter");
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()

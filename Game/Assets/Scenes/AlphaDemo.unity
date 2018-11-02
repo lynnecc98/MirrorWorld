@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 25
+  m_MaxValue: 15
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -3835,7 +3835,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 25
+  m_MaxValue: 15
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -4491,7 +4491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerShot: 25
-  timeBetweenBullets: 0.15
+  timeBetweenBullets: 0.25
   laser: {fileID: 8300000, guid: 119a29c9dd189f7418fbdf35c357e768, type: 3}
   obj:
   - {fileID: 1583617075139452, guid: 7982bf5bc40763f4e9e4bbb293fbbb83, type: 2}
@@ -6420,7 +6420,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 25
+  m_MaxValue: 15
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
