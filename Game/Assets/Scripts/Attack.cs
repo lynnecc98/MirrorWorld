@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[RequireComponent(typeof(AudioSource))]
 public class Attack : MonoBehaviour {
 
     public int damagePerShot = 25;
     public float timeBetweenBullets = 0.15f;
 
+    public AudioClip laser;
 
     public GameObject[] obj;
 
@@ -23,6 +24,7 @@ public class Attack : MonoBehaviour {
         shootableMask = LayerMask.GetMask("Shootable");
         element = GetComponent<elementType>();
         curElement = element.element;
+
     }
 
 
@@ -34,6 +36,8 @@ public class Attack : MonoBehaviour {
         if (Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
         {
             Shoot();
+            AudioSource laser = GetComponent<AudioSource>();
+            laser.Play();
         }
         element = GetComponent<elementType>();
         curElement = element.element;
