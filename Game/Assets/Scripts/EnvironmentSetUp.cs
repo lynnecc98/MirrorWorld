@@ -65,7 +65,20 @@ public class EnvironmentSetUp : MonoBehaviour {
         {
             if(rooms[i] == roomType.enemyRoomR || rooms[i] == roomType.enemyRoomB || rooms[i] == roomType.enemyRoomG || rooms[i] == roomType.bossRoom) 
             {
-                Instantiate(EnemyRoom, floor[i].transform.position, floor[i].transform.rotation);
+                GameObject temp =  Instantiate(EnemyRoom, floor[i].transform.position, floor[i].transform.rotation);
+                elementType tempElement = temp.GetComponent<elementType>();
+                if (rooms[i] == roomType.enemyRoomR)
+                {
+                    tempElement.element = Element.Red;
+                }
+                if (rooms[i] == roomType.enemyRoomB)
+                {
+                    tempElement.element = Element.Blue;
+                }
+                if (rooms[i] == roomType.enemyRoomG)
+                {
+                    tempElement.element = Element.Green;
+                }
             }
             if (rooms[i] == roomType.playerRoom || rooms[i] == roomType.healthRoom || rooms[i] == roomType.goalRoom)
             {

@@ -507,6 +507,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4634006132817886}
+  - component: {fileID: 114365270065541108}
+  - component: {fileID: 65185364191519904}
   m_Layer: 0
   m_Name: HealthRoom
   m_TagString: Untagged
@@ -1173,7 +1175,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1609274221775140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.24, y: 0, z: 0}
+  m_LocalPosition: {x: 26.245401, y: -1.2, z: 44.780735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4328645525444904}
@@ -2827,6 +2829,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65185364191519904
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609274221775140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 4, z: 10}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!65 &65779580595313636
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3272,6 +3286,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114365270065541108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609274221775140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74495a507480f9a43aca8dc2dd55772d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198770074125776468
 ParticleSystem:
   m_ObjectHideFlags: 1

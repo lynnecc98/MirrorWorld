@@ -459,6 +459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4271386193580730}
+  - component: {fileID: 114961970987486284}
   m_Layer: 0
   m_Name: EnemyRoom
   m_TagString: Untagged
@@ -2664,6 +2665,18 @@ MonoBehaviour:
   enemy: {fileID: 1609622959851336, guid: 4b1aa323dd4831543be5b3d82d34dc39, type: 2}
   spawnPoint: {fileID: 4509036129314212}
   making: 1
+--- !u!114 &114961970987486284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730285527203966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a6f71b592704c15a968fe572c5681c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: 0
 --- !u!198 &198052854975170578
 ParticleSystem:
   m_ObjectHideFlags: 1

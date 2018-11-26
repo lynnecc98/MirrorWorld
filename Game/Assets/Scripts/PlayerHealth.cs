@@ -43,6 +43,14 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void heal(int amount)
+    {
+        currentHealth += amount;
+
+        healthSlider.value = currentHealth;
+
+    }
+
     void Death()
     {
         isDead = true;

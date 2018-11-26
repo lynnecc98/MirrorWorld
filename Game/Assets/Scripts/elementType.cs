@@ -7,11 +7,10 @@ public enum Element { Red, Green, Blue, Neutral };
 public class elementType : MonoBehaviour {
 
     
-    public Element element;
+    public Element element = Element.Neutral;
 
     // Use this for initialization
     void Start () {
-        element = Element.Neutral;
 	}
 	
 	// Update is called once per frame
