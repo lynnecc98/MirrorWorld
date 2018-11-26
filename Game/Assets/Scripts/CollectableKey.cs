@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class CollectableKey : MonoBehaviour {
-
+    [SerializeField] private AudioClip ding;
     [SerializeField] private Image customImage;
 
     private void OnTriggerEnter(Collider c)
@@ -15,6 +16,8 @@ public class CollectableKey : MonoBehaviour {
         {
             KeyCollector bc = c.attachedRigidbody.gameObject.GetComponent<KeyCollector>();
             bc.ReceiveKey();
+            AudioSource ding = GetComponent<AudioSource>();
+            ding.Play();
             customImage.enabled = true;
             Destroy(this.gameObject);
         }
