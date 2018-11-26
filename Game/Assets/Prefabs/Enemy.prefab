@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 136672322345197514}
   - component: {fileID: 54886453606352290}
   - component: {fileID: 114328130062026766}
+  - component: {fileID: 114007361121909824}
   - component: {fileID: 114701269846718884}
   - component: {fileID: 114738705439377978}
   - component: {fileID: 114116147483300284}
@@ -103,7 +104,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: Infinity
   m_AngularDrag: Infinity
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -131,6 +132,20 @@ MonoBehaviour:
   endScale: {x: 0.3, y: 0.3, z: 0.3}
   scaleSpeed: 0.2
   scaleRate: 0.5
+--- !u!114 &114007361121909824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609622959851336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc2c75de6655b24086f135758af9197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redM: {fileID: 2100000, guid: 2e13b69efc475404dadd106f01a190d2, type: 2}
+  greenM: {fileID: 2100000, guid: 0f67eff93c0714080834322c1d2b7462, type: 2}
+  blueM: {fileID: 2100000, guid: 85894b38632e64a4082b0a535a63c5df, type: 2}
 --- !u!114 &114116147483300284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,7 +178,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1609622959851336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e1f04e106d984cb6b81440c04c09bc3, type: 3}
   m_Name: 
@@ -187,7 +202,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1609622959851336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cef735aea95f6854c8b63e8f27cf41a5, type: 3}
   m_Name: 
@@ -223,7 +238,7 @@ NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1609622959851336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 0.9
