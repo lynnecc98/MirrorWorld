@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CollectableKey : MonoBehaviour {
+
+    [SerializeField] private Image customImage;
 
     private void OnTriggerEnter(Collider c)
     {
@@ -12,6 +15,7 @@ public class CollectableKey : MonoBehaviour {
         {
             KeyCollector bc = c.attachedRigidbody.gameObject.GetComponent<KeyCollector>();
             bc.ReceiveKey();
+            customImage.enabled = true;
             Destroy(this.gameObject);
         }
     }
