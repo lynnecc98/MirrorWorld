@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     ChangeType change;
 
 
+
     void Awake()
     {
         currentHealth = startingHealth;

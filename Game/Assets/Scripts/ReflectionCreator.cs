@@ -10,7 +10,8 @@ public class ReflectionCreator : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        currentObject = Instantiate(reflection, spawnPoint.position, spawnPoint.rotation);
+        int random = Random.Range(0, 3);
+        currentObject = Instantiate(reflection, spawnPoint.position + new Vector3(0f, .85f, 0f), spawnPoint.rotation);
     }
 	
 }
