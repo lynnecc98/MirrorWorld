@@ -11,7 +11,7 @@ public class EnvironmentSetUp : MonoBehaviour {
 
     public GameObject[] floor;
     public GameObject[] BridgeL;
-    public GameObject EnemyRoom;
+    public GameObject [] EnemyRoom;
     public GameObject TriggerRoom;
     public GameObject HealthRoom;
     public GameObject StartingRoom;
@@ -84,7 +84,9 @@ public class EnvironmentSetUp : MonoBehaviour {
         {
             if(rooms[i] == roomType.enemyRoomR || rooms[i] == roomType.enemyRoomB || rooms[i] == roomType.enemyRoomG) 
             {
-                GameObject temp =  Instantiate(EnemyRoom, floor[i].transform.position, floor[i].transform.rotation);
+                int random = Random.Range(0, 2);
+                print(random);
+                GameObject temp =  Instantiate(EnemyRoom[random], floor[i].transform.position, floor[i].transform.rotation);
                 elementType tempElement = temp.GetComponent<elementType>();
                 if (rooms[i] == roomType.enemyRoomR)
                 {
