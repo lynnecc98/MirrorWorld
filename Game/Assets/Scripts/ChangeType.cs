@@ -47,6 +47,7 @@ public class ChangeType : MonoBehaviour
         // define the materials
         mats = new List<Material>(new Material[] { redM, greenM, blueM });
         Object.GetComponent<SkinnedMeshRenderer>().material = currentMaterial;
+        element.element = Element.Neutral;
     }
 
     // Update is called once per frame

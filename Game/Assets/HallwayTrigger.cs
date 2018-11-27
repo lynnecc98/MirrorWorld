@@ -16,15 +16,6 @@ public class HallwayTrigger : MonoBehaviour {
             }
         }
     }
-
-    //private void OnTriggerStay(Collider player)
-    //{
-    //    Debug.Log("inside");
-    //    if (player.attachedRigidbody)
-    //    {
-
-    //    }
-    //}
     private void OnTriggerEnter(Collider other)
     {
         inTrigger = true;

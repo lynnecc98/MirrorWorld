@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 4906355715068374}
   - component: {fileID: 65472698439359860}
   - component: {fileID: 114436362505404198}
+  - component: {fileID: 136326505993332928}
   m_Layer: 8
   m_Name: Crystalsv01
   m_TagString: Untagged
@@ -274,7 +275,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1489004239559720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46618485, y: -1.1500001, z: 1.946497}
+  m_LocalPosition: {x: 25.797647, y: -1.2, z: 37.297028}
   m_LocalScale: {x: 0.26229, y: 0.26229, z: 0.26229}
   m_Children:
   - {fileID: 4821978429149978}
@@ -643,3 +644,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggered: 0
+--- !u!136 &136326505993332928
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489004239559720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 1.9013165
+  m_Height: 4.902451
+  m_Direction: 1
+  m_Center: {x: -0.13859528, y: 1.712566, z: 0.36956924}
