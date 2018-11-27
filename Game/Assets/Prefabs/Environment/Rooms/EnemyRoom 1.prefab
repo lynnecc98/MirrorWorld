@@ -865,13 +865,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1793954907356374}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.73, y: 1.1, z: 0.38}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 2.13, y: 1.1, z: 1.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4271386193580730}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!4 &4136021586696244
 Transform:
   m_ObjectHideFlags: 1
@@ -973,7 +973,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730285527203966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.278236, y: -1.2, z: 43.895893}
+  m_LocalPosition: {x: 48.798233, y: -1.2, z: 30.068832}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4516271051046756}
@@ -3451,7 +3451,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce966c2a4f7c2034fa16b971ee21ac57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1609622959851336, guid: 4b1aa323dd4831543be5b3d82d34dc39, type: 2}
+  enemyR: {fileID: 100000, guid: 06aec8c7ff2a2174f8c755f09af72d57, type: 2}
+  enemyG: {fileID: 100016, guid: 89fc79b8e96bce64d9ea713a39f3f05e, type: 2}
+  enemyB: {fileID: 100018, guid: c0ac0abef9c67f64590fc85c01acb27f, type: 2}
   count: 2
   spawnPoints:
   - {fileID: 4122834786563000}
