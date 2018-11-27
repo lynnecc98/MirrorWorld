@@ -263,7 +263,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100147148
 GameObject:
@@ -15537,7 +15537,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4271386193580730, guid: 1ca65d61c6687ce4bbf3bd8555afdd3e, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4957967612634676, guid: 1ca65d61c6687ce4bbf3bd8555afdd3e, type: 2}
       propertyPath: m_LocalScale.x
@@ -16591,7 +16591,7 @@ MonoBehaviour:
   keyRoom: {fileID: 1960865219538524, guid: c4b24e1deef8840c285cc0c676add88f, type: 2}
   bossRoom: {fileID: 1617890790502256, guid: ccda657f321125c41a1f710055557613, type: 2}
   bridge: {fileID: 1993236170341636, guid: dded9dea002fb479a9e74c515468bf6c, type: 2}
-  trig: {fileID: 1623457469802980, guid: 339d9a7d54a0ba348af73129793e89a0, type: 2}
+  trig: {fileID: 1489004239559720, guid: 856ad8c153196a04db0611d4b642c80f, type: 2}
   playr: {fileID: 904974390}
 --- !u!1 &1593319469
 GameObject:
