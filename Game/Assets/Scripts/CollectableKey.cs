@@ -18,8 +18,8 @@ public class CollectableKey : MonoBehaviour {
             bc.ReceiveKey();
             AudioSource ding = GetComponent<AudioSource>();
             ding.Play();
-            customImage.enabled = true;
-            Destroy(this.gameObject);
+            //customImage.enabled = true;
+            Destroy(this.gameObject, .5f);
         }
     }
 }
