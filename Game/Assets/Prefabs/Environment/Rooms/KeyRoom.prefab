@@ -620,3 +620,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac56350d7e8a4a7b98e4ec73af1e74a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ding: {fileID: 0}
+  customImage: {fileID: 0}
