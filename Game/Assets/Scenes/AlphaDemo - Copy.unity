@@ -790,6 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac56350d7e8a4a7b98e4ec73af1e74a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ding: {fileID: 0}
   customImage: {fileID: 0}
 --- !u!65 &228015781
 BoxCollider:
@@ -3276,7 +3277,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826396690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.5, y: 0.63734436, z: -33.3}
+  m_LocalPosition: {x: -45.5, y: 0.63734436, z: -60.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 228015784}
@@ -6767,6 +6768,11 @@ MonoBehaviour:
   TriggerRoom: {fileID: 1402952052087368, guid: 356d803bc2e9cde469356d4e7013d417,
     type: 2}
   HealthRoom: {fileID: 1609274221775140, guid: 96eb023ca02fd1c45883cbcafd5272a1, type: 2}
+  StartingRoom: {fileID: 1296830474630716, guid: ae453727938fcd944a9a1df92c9878be,
+    type: 2}
+  endRoom: {fileID: 1044891799644202, guid: 745f6db6152ed4b60a7f0bca3258a28a, type: 2}
+  keyRoom: {fileID: 1960865219538524, guid: c4b24e1deef8840c285cc0c676add88f, type: 2}
+  bossRoom: {fileID: 1617890790502256, guid: ccda657f321125c41a1f710055557613, type: 2}
   playr: {fileID: 904974390}
 --- !u!1 &1699227028
 GameObject:
