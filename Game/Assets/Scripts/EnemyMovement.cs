@@ -30,6 +30,10 @@ public class EnemyMovement : MonoBehaviour {
             if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
             {
                 nav.SetDestination(spawnpoint.position);
+                if (this.transform.position == spawnpoint.position)
+                {
+                    this.transform.rotation = spawnpoint.rotation;
+                }
             }
             else
             {

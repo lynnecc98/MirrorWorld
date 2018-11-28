@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public GameObject player;
     public int startingHealth = 100;
     public int currentHealth;
     public bool isDead = false;
@@ -15,8 +16,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Awake()
     {
-
         currentHealth = startingHealth;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -26,6 +27,10 @@ public class PlayerHealth : MonoBehaviour
         {
             Destroy(gameObject, 2f);
             SceneManager.LoadScene("LoseScene");
+        }
+        if (player.transform.position.y < -9)
+        {
+            isDead = true;
         }
     }
 
