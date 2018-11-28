@@ -114,6 +114,7 @@ public class EnvironmentSetUp : MonoBehaviour {
             if (rooms[i] == roomType.goalRoom)
             {
                 Instantiate(endRoom, floor[i].transform.position, floor[i].transform.rotation);
+                //playr.transform.position = floor[i].transform.position;
             }
             if (rooms[i] == roomType.playerRoom)
             {
