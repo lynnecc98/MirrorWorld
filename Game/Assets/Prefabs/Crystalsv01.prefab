@@ -89,9 +89,10 @@ GameObject:
   - component: {fileID: 65472698439359860}
   - component: {fileID: 114436362505404198}
   - component: {fileID: 136326505993332928}
+  - component: {fileID: 114122475306922512}
   m_Layer: 8
   m_Name: Crystalsv01
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -632,6 +633,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114122475306922512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489004239559720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f572e2fa547d0bc489be917a41c76ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114436362505404198
 MonoBehaviour:
   m_ObjectHideFlags: 1

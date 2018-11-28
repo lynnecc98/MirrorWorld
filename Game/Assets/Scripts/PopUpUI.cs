@@ -5,14 +5,17 @@ using UnityEngine.UI;
 
 public class PopUpUI : MonoBehaviour {
 
-    [SerializeField] private Image customImage;
-    [SerializeField] private Image customImage2;
 
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-                customImage.enabled = true;
+            if(this.CompareTag("Crystal"))
+                 GameObject.Find("BridgePopUp").GetComponent<Image>().enabled = true;
+            if (this.CompareTag("Obstacle") && !other.GetComponent<KeyCollector>().hasKey)
+                GameObject.Find("NeedKeyPopUp").GetComponent<Image>().enabled = true;
+            if (this.CompareTag("Reflection"))
+                GameObject.Find("ReflectionPopUp").GetComponent<Image>().enabled = true;
         }
     }
 
@@ -20,7 +23,12 @@ public class PopUpUI : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-                customImage.enabled = false;
+            if (this.CompareTag("Crystal"))
+                GameObject.Find("BridgePopUp").GetComponent<Image>().enabled = false;
+            if (this.CompareTag("Obstacle") && !other.GetComponent<KeyCollector>().hasKey)
+                GameObject.Find("NeedKeyPopUp").GetComponent<Image>().enabled = false;
+            if (this.CompareTag("Reflection"))
+                GameObject.Find("ReflectionPopUp").GetComponent<Image>().enabled = false;
         }
     }
 }

@@ -23,11 +23,11 @@ GameObject:
   - component: {fileID: 23708640395212372}
   - component: {fileID: 65293412181094018}
   - component: {fileID: 82292035328575266}
-  - component: {fileID: 114237168256843856}
+  - component: {fileID: 114877997809536850}
   - component: {fileID: 54157396425049818}
   m_Layer: 0
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,7 +238,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114237168256843856
+--- !u!114 &114877997809536850
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -250,4 +250,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ding: {fileID: 8300000, guid: 372e523530de9004fa5d69198d25d543, type: 3}
-  customImage: {fileID: 0}
+  customImage: {fileID: 114187995392726330, guid: a90f215fb6426a74087e8035f0d7c5ff,
+    type: 2}

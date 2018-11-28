@@ -9,7 +9,7 @@ public class GameStart : MonoBehaviour
     // Use this for initialization
     public void StartGame()
     {
-        SceneManager.LoadScene("AlphaDemo");
+        SceneManager.LoadScene("MainGame");
         Time.timeScale = 1f;
     }
 

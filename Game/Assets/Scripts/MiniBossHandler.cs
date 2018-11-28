@@ -68,6 +68,19 @@ public class MiniBossHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-}
+            for (int i = 0; i < count; i++)
+            {
+                if (!deadlist.Contains(i))
+                {
+                    EnemyHealth health = enemys[i].GetComponent<EnemyHealth>();
+                    if (health.isDead)
+                    {
+                        deadlist.Add(i);
+                    }
+                }
+
+            }
+        }
+
+    }
+

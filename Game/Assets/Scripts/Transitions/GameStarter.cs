@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameStarter : MonoBehaviour {
 
     public void StartGame(){
-        SceneManager.LoadScene("demo");
+        SceneManager.LoadScene("MainGame");
         Time.timeScale = 1f;
     }
 }

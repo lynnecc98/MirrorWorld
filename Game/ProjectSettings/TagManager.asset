@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ground
   - Reflection
+  - Key
+  - Crystal
+  - Obstacle
   layers:
   - Default
   - TransparentFX
