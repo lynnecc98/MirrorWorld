@@ -3686,7 +3686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniBoss: {fileID: 1534008593141598, guid: 012f80d47147d054aa8a3cd6162b99ab, type: 2}
-  creature: {fileID: 100018, guid: c0ac0abef9c67f64590fc85c01acb27f, type: 2}
+  creature: {fileID: 1952752198385842, guid: e38bab76e79b10545aa903a593d230c6, type: 2}
   count: 3
   spawnPoints:
   - {fileID: 4653902577735048}
