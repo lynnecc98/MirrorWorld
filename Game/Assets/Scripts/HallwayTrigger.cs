@@ -13,6 +13,8 @@ public class HallwayTrigger : MonoBehaviour {
             {
                 Debug.Log("triggered");
                 triggered = !triggered;
+                AudioSource sparkle = GetComponent<AudioSource>();
+                sparkle.Play();
             }
         }
     }
