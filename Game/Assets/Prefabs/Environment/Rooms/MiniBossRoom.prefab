@@ -538,6 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4888721912205730}
   - component: {fileID: 114390139901804358}
+  - component: {fileID: 65294420659997852}
   m_Layer: 0
   m_Name: MiniBossRoom
   m_TagString: Untagged
@@ -787,7 +788,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1390192547385172}
   m_LocalRotation: {x: 0, y: 0.9238796, z: -0, w: -0.38268325}
-  m_LocalPosition: {x: -1.83, y: 0.49, z: -2.18}
+  m_LocalPosition: {x: -1.83, y: 0.5, z: -2.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4888721912205730}
@@ -829,7 +830,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1488903590577564}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 1.84, y: 0.51, z: 1.49}
+  m_LocalPosition: {x: 1.84, y: 0.5, z: 1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4888721912205730}
@@ -1108,7 +1109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114899560958864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.61, z: -0}
+  m_LocalPosition: {x: -0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4888721912205730}
@@ -1267,7 +1268,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617890790502256}
   m_LocalRotation: {x: -0.000000022351744, y: -0, z: -0.000000022351744, w: 1}
-  m_LocalPosition: {x: 14.067829, y: -10, z: 81.27953}
+  m_LocalPosition: {x: 31.054321, y: -10, z: 29.436829}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4605053827023200}
@@ -3283,6 +3284,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65294420659997852
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617890790502256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.243192, y: 4.1855125, z: 10.034332}
+  m_Center: {x: -0.07833862, y: 1.0705411, z: 0.0261302}
 --- !u!95 &95059147162673104
 Animator:
   serializedVersion: 3
@@ -3667,12 +3680,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617890790502256}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b993684d5069a5546acbd88dc63501de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniBoss: {fileID: 1324132509918558, guid: 184de3bd1efe45447b520c424b29cce3, type: 2}
+  miniBoss: {fileID: 1534008593141598, guid: 012f80d47147d054aa8a3cd6162b99ab, type: 2}
   creature: {fileID: 100018, guid: c0ac0abef9c67f64590fc85c01acb27f, type: 2}
   count: 3
   spawnPoints:

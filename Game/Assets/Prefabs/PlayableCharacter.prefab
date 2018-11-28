@@ -2053,7 +2053,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!82 &82397442251584210
 AudioSource:
@@ -2800,7 +2800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerShot: 25
-  timeBetweenBullets: 0.25
+  timeBetweenBullets: 0.5
   laser: {fileID: 8300000, guid: 119a29c9dd189f7418fbdf35c357e768, type: 3}
   obj:
   - {fileID: 1583617075139452, guid: 7982bf5bc40763f4e9e4bbb293fbbb83, type: 2}

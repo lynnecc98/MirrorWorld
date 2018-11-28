@@ -17,8 +17,9 @@ public class AttackObject : MonoBehaviour {
             {
                 enemyHealth.TakeDamage(damagePerShot);
             }
-            Destroy(this.gameObject);
+            
         }
+        Destroy(this.gameObject);
     }
 
     void Update()
