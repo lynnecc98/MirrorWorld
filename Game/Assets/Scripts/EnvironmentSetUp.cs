@@ -109,7 +109,6 @@ public class EnvironmentSetUp : MonoBehaviour {
             if ( rooms[i] == roomType.healthRoom)
             {
                 Instantiate(HealthRoom, floor[i].transform.position, floor[i].transform.rotation);
-                playr.transform.position = floor[i].transform.position;
 
             }
             if (rooms[i] == roomType.goalRoom)
@@ -118,7 +117,8 @@ public class EnvironmentSetUp : MonoBehaviour {
             }
             if (rooms[i] == roomType.playerRoom)
             {
-                Instantiate(StartingRoom, floor[i].transform.position, floor[i].transform.rotation); 
+                Instantiate(StartingRoom, floor[i].transform.position, floor[i].transform.rotation);
+                playr.transform.position = floor[i].transform.position;
             }
             if (rooms[i] == roomType.triggerRoom)
             {
