@@ -19,7 +19,7 @@ public class AttackObject : MonoBehaviour {
             }
             
         }
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 0.1f);
     }
 
     void Update()
