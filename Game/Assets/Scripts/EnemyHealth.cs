@@ -7,6 +7,9 @@ public class EnemyHealth : MonoBehaviour
     public int startingHealth = 100;
     public int currentHealth;
     public bool isDead = false;
+
+    public static int miniBossCount = 0;
+
     elementType element;
     ChangeType change;
 
@@ -43,7 +46,31 @@ public class EnemyHealth : MonoBehaviour
     public void Death()
     {
         isDead = true;
-        
+
+        if(this.CompareTag("Boss")) { 
+            miniBossCount++;
+            if (miniBossCount == 1)
+            {
+                GameObject.Find("Hint1PopUp").GetComponent<Image>().enabled = true;
+            }
+
+            if (miniBossCount >= 2)
+            {
+                if (GameObject.Find("Mesh").GetComponent<elementType>().element == Element.Red)
+                {
+                    GameObject.Find("HintRed").GetComponent<Image>().enabled = true;
+                }
+                if (GameObject.Find("Mesh").GetComponent<elementType>().element == Element.Blue)
+                {
+                    GameObject.Find("HintBlue").GetComponent<Image>().enabled = true;
+                }
+                if (GameObject.Find("Mesh").GetComponent<elementType>().element == Element.Green)
+                {
+                    GameObject.Find("HintGreen").GetComponent<Image>().enabled = true;
+                }
+            }
+        }
+
         if (element.element == Element.Red)
         {
             change.red.addPoints(1);

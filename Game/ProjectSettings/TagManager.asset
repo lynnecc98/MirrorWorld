@@ -9,6 +9,7 @@ TagManager:
   - Key
   - Crystal
   - Obstacle
+  - Boss
   layers:
   - Default
   - TransparentFX
