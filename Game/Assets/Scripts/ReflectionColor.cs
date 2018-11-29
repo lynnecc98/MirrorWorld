@@ -21,6 +21,7 @@ public class ReflectionColor : MonoBehaviour {
         {
             GetComponent<SkinnedMeshRenderer>().material = greenM;
         }
+        
     }
 
     private void Update()
@@ -38,6 +39,7 @@ public class ReflectionColor : MonoBehaviour {
         {
             GetComponent<SkinnedMeshRenderer>().material = greenM;
         }
+        print(current.element);
     }
 
 }
