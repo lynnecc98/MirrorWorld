@@ -4,6 +4,7 @@ using UnityEngine;
 
 //[RequireComponent(typeof(AudioSource))]
 public class Attack : MonoBehaviour {
+    public Animator anim;
 
     public int damagePerShot = 25;
     public float timeBetweenBullets = 0.15f;
@@ -25,6 +26,7 @@ public class Attack : MonoBehaviour {
         shootableMask = LayerMask.GetMask("Shootable");
         element = GetComponent<elementType>();
         curElement = element.element;
+        anim = GetComponent<Animator>();
 
     }
 
@@ -39,9 +41,11 @@ public class Attack : MonoBehaviour {
             Shoot();
             AudioSource laser = GetComponent<AudioSource>();
             laser.Play();
+            anim.SetBool("attack", true);
         }
         element = GetComponent<elementType>();
         curElement = element.element;
+        anim.SetBool("attack", false);
         //print(element.element);
 
     }
