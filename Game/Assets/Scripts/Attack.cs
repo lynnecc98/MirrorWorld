@@ -11,14 +11,20 @@ public class Attack : MonoBehaviour {
 
     public AudioClip laser;
 
+    public bool animShoot = false;
+
     public GameObject[] obj;
 
     int shootableMask;
     float timer;
+    float shootingTimer;
 
     elementType element;
     Element curElement;
     Vector3 shift = new Vector3(0f, 0.5f, 0f);
+    bool shooting = false;
+
+    
 
 
     void Awake()
@@ -35,29 +41,43 @@ public class Attack : MonoBehaviour {
     void Update() {
 
         timer += Time.deltaTime;
+        shootingTimer += Time.deltaTime;
 
         if (Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
         {
-            Shoot();
+
+            //Shoot();
+            animShoot = true;
+            anim.SetBool("attack", animShoot);
             AudioSource laser = GetComponent<AudioSource>();
             laser.Play();
-            anim.SetBool("attack", true);
+            shooting = true;
+            shootingTimer = 0;
+        } else
+        {
+            animShoot = false;
+            anim.SetBool("attack", animShoot);
         }
+        if (shootingTimer >= 0.1 && shooting) { 
+            Shoot();
+            shooting = false;
+        } 
         element = GetComponent<elementType>();
         curElement = element.element;
-        anim.SetBool("attack", false);
         //print(element.element);
 
     }
 
     void Shoot()
     {
+   
         timer = 0f;
         Vector3 curPos = this.transform.position;
         Quaternion curRot = this.transform.rotation;
         Vector3 curFor = this.transform.forward;
         GameObject select = obj[0];
-        switch (curElement) {
+        switch (curElement)
+        {
             case Element.Neutral:
                 select = obj[0];
                 break;
@@ -71,10 +91,9 @@ public class Attack : MonoBehaviour {
                 select = obj[3];
                 break;
         }
-        GameObject objCur = (GameObject)Instantiate(select, curPos+curFor+shift, curRot);
+        GameObject objCur = (GameObject)Instantiate(select, curPos + curFor + shift, curRot);
         Rigidbody objRig = objCur.GetComponent<Rigidbody>();
         objRig.velocity = Vector3.Normalize(curFor) * 20;
-
 
 
 

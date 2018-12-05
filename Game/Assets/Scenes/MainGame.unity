@@ -9253,6 +9253,7 @@ MonoBehaviour:
   damagePerShot: 25
   timeBetweenBullets: 0.5
   laser: {fileID: 8300000, guid: 119a29c9dd189f7418fbdf35c357e768, type: 3}
+  animShoot: 0
   obj:
   - {fileID: 1583617075139452, guid: 7982bf5bc40763f4e9e4bbb293fbbb83, type: 2}
   - {fileID: 1816381901823008, guid: ae919ac2641099d47a67c59af29ba0cb, type: 2}
@@ -10922,48 +10923,6 @@ Transform:
   m_Father: {fileID: 443679509}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1199572980
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -77.903145
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -22.376534
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 63.690437
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753812383581112, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1200642309
 GameObject:
   m_ObjectHideFlags: 0

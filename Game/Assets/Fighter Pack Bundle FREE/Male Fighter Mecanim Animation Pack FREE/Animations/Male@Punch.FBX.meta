@@ -172,7 +172,7 @@ ModelImporter:
       name: Punch
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 25
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
