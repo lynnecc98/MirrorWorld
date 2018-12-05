@@ -37,6 +37,10 @@ public class EnemyHealth : MonoBehaviour
 
         currentHealth -= amount;
 
+        Rigidbody temp = this.GetComponent<Rigidbody>();
+
+        temp.AddForce(new Vector3(0, 0, -50000f));
+
         if (currentHealth <= 0)
         {
             Death();
@@ -56,15 +60,15 @@ public class EnemyHealth : MonoBehaviour
 
             if (miniBossCount >= 2)
             {
-                if (GameObject.Find("Mesh").GetComponent<elementType>().element == Element.Red)
+                if (GameObject.FindGameObjectWithTag("Reflection").GetComponent<elementType>().element == Element.Red)
                 {
                     GameObject.Find("HintRed").GetComponent<Image>().enabled = true;
                 }
-                if (GameObject.Find("Mesh").GetComponent<elementType>().element == Element.Blue)
+                if (GameObject.FindGameObjectWithTag("Reflection").GetComponent<elementType>().element == Element.Blue)
                 {
                     GameObject.Find("HintBlue").GetComponent<Image>().enabled = true;
                 }
-                if (GameObject.Find("Mesh").GetComponent<elementType>().element == Element.Green)
+                if (GameObject.FindGameObjectWithTag("Reflection").GetComponent<elementType>().element == Element.Green)
                 {
                     GameObject.Find("HintGreen").GetComponent<Image>().enabled = true;
                 }
