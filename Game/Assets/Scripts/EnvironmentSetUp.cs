@@ -124,7 +124,7 @@ public class EnvironmentSetUp : MonoBehaviour {
             if (rooms[i] == roomType.triggerRoom)
             {
                 Instantiate(TriggerRoom, floor[i].transform.position, floor[i].transform.rotation);
-                curTrig = Instantiate(trig, floor[i].transform.position, floor[i].transform.rotation);
+                curTrig = Instantiate(trig, floor[i].transform.position+ new Vector3(0, 0.5f, 0), floor[i].transform.rotation);
             }
             if (rooms[i] == roomType.keyRoom)
             {
