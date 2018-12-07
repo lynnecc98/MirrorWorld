@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerShot: 20
-  alive: 2.5
+  alive: 5
 --- !u!135 &135475569315877678
 SphereCollider:
   m_ObjectHideFlags: 1

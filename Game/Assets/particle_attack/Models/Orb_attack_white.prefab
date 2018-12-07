@@ -36,12 +36,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4437593802503826}
-  - component: {fileID: 114520364909039430}
   - component: {fileID: 54016275279603546}
   - component: {fileID: 65177276538051732}
   - component: {fileID: 23312137761365740}
   - component: {fileID: 33190961059962560}
   - component: {fileID: 135236531709780036}
+  - component: {fileID: 114520364909039430}
   m_Layer: 0
   m_Name: Orb_attack_white
   m_TagString: Untagged
@@ -116,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1205398679032416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.044892937, y: 0.091175914, z: 0.016991243}
+  m_LocalPosition: {x: 21.240547, y: -1.9538398, z: 104.38001}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4564372585608438}
@@ -205,7 +205,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.75, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114520364909039430
 MonoBehaviour:
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerShot: 20
-  alive: 2.5
+  alive: 0.5
 --- !u!135 &135236531709780036
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -230,7 +230,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &198667910183974882
 ParticleSystem:

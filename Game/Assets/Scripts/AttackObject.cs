@@ -6,7 +6,7 @@ public class AttackObject : MonoBehaviour {
 
     public int damagePerShot = 20;
     float timer = 0;
-    public float alive = 2.5f;
+    public float alive = 0.5f;
 
     void OnTriggerEnter(Collider c)
     {
@@ -20,6 +20,7 @@ public class AttackObject : MonoBehaviour {
             
         }
         Destroy(this.gameObject, 0.1f);
+        print(c.gameObject.name);
     }
 
     void Update()

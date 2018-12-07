@@ -36,13 +36,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4949029952620194}
-  - component: {fileID: 114073133787357546}
-  - component: {fileID: 114702667376349552}
   - component: {fileID: 54029923043831968}
   - component: {fileID: 65273737015004514}
   - component: {fileID: 23393544119549314}
   - component: {fileID: 33784193157895826}
   - component: {fileID: 135003202886052086}
+  - component: {fileID: 114702667376349552}
   m_Layer: 0
   m_Name: Orb_attack_blue
   m_TagString: Untagged
@@ -206,21 +205,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.75, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114073133787357546
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1518886856544058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bebdf302f123edd4ab13c3024aa17164, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damagePerShot: 20
-  alive: 2.5
 --- !u!114 &114702667376349552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerShot: 20
-  alive: 2.5
+  alive: 0.5
 --- !u!135 &135003202886052086
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -244,7 +230,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &198258202497688454
 ParticleSystem:
