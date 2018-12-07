@@ -44,6 +44,8 @@ public class EnemyAtk : MonoBehaviour {
         if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
         {
             Attack();
+            Rigidbody temp = this.GetComponent<Rigidbody>();
+            temp.AddForce(new Vector3(0, 0, -50000f));
         }
 
     }
