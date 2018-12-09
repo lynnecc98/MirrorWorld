@@ -4205,6 +4205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74495a507480f9a43aca8dc2dd55772d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healImage: {fileID: 0}
+  healing: 0
+  flashSpeed: 5
+  flashColour: {r: 0, g: 1, b: 0, a: 0.1}
 --- !u!198 &198380463077549838
 ParticleSystem:
   m_ObjectHideFlags: 1
