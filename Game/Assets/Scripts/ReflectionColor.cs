@@ -39,7 +39,7 @@ public class ReflectionColor : MonoBehaviour {
         {
             GetComponent<SkinnedMeshRenderer>().material = greenM;
         }
-        print(current.element);
+        
     }
 
 }

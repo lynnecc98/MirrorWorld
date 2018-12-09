@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 136326505993332928}
   - component: {fileID: 114122475306922512}
   - component: {fileID: 82555230940307682}
+  - component: {fileID: 65410975279312612}
   m_Layer: 8
   m_Name: Crystalsv01
   m_TagString: Crystal
@@ -585,6 +586,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1115529086179216}
   m_Mesh: {fileID: 4300000, guid: 78ffc1ed5f72076498d0614872cf48ec, type: 3}
+--- !u!65 &65410975279312612
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489004239559720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.8184824, y: 4.637645, z: 7.418322}
+  m_Center: {x: 0.373422, y: 1.818822, z: 0.7375796}
 --- !u!65 &65472698439359860
 BoxCollider:
   m_ObjectHideFlags: 1

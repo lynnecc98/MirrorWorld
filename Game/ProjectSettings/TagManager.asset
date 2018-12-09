@@ -10,6 +10,7 @@ TagManager:
   - Crystal
   - Obstacle
   - Boss
+  - Books
   layers:
   - Default
   - TransparentFX

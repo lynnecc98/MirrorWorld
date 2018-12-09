@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CanvasGroup))]
 
@@ -28,13 +29,16 @@ public class GamePause : MonoBehaviour
                 canvasGroup.blocksRaycasts = false;
                 canvasGroup.alpha = 0f;
                 Time.timeScale = 1f;
+                GameObject.Find("BookPopUp").GetComponent<Image>().enabled = false;
             }
             else
             {
+
                 canvasGroup.interactable = true;
                 canvasGroup.blocksRaycasts = true;
                 canvasGroup.alpha = 1f;
                 Time.timeScale = 0f;
+                GameObject.Find("BookPopUp").GetComponent<Image>().enabled = false;
             }
         }
     }
