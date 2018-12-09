@@ -8,9 +8,12 @@ public class PlayerHealth : MonoBehaviour
     public GameObject player;
     public int startingHealth = 100;
     public int currentHealth;
+    public Image damageImage;
+    public float flashSpeed = 5f;
+    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+    public bool damaged;
     public bool isDead = false;
     public Slider healthSlider;
-
 
 
 
@@ -22,7 +25,19 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        
+
+        if (damaged)
+        {
+            damageImage.color = flashColour;
+            GameObject.Find("DamageImage").GetComponent<CanvasGroup>().alpha = 1f;
+        }
+        else
+        {
+            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+            GameObject.Find("DamageImage").GetComponent<CanvasGroup>().alpha = 0f;
+        }
+        damaged = false;
+
         if (isDead == true)
         {
             Destroy(gameObject, 2f);
@@ -36,6 +51,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+
+        damaged = true;
 
         currentHealth -= amount;
 

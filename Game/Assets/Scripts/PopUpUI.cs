@@ -16,6 +16,11 @@ public class PopUpUI : MonoBehaviour {
                 GameObject.Find("NeedKeyPopUp").GetComponent<Image>().enabled = true;
             if (this.CompareTag("Reflection"))
                 GameObject.Find("ReflectionPopUp").GetComponent<Image>().enabled = true;
+            if (this.CompareTag("Books"))
+            {
+                GameObject.Find("ReadPopUp").GetComponent<Image>().enabled = true;
+            }
+                
         }
     }
 
@@ -29,6 +34,27 @@ public class PopUpUI : MonoBehaviour {
                 GameObject.Find("NeedKeyPopUp").GetComponent<Image>().enabled = false;
             if (this.CompareTag("Reflection"))
                 GameObject.Find("ReflectionPopUp").GetComponent<Image>().enabled = false;
+            if (this.CompareTag("Books"))
+            {
+                GameObject.Find("ReadPopUp").GetComponent<Image>().enabled = false;
+            }
         }
+    }
+
+    private void Update()
+    {
+
+        if (GameObject.Find("ReadPopUp").GetComponent<Image>().enabled == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                bool status = GameObject.Find("BookPopUp").GetComponent<Image>().enabled;
+                GameObject.Find("BookPopUp").GetComponent<Image>().enabled = !status;
+
+            }
+        }
+
+
+
     }
 }
