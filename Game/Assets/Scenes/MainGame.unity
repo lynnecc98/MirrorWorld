@@ -19473,6 +19473,7 @@ GameObject:
   - component: {fileID: 1606098089}
   - component: {fileID: 1606098091}
   - component: {fileID: 1606098090}
+  - component: {fileID: 1606098092}
   m_Layer: 0
   m_Name: DamageImage
   m_TagString: Untagged
@@ -19532,6 +19533,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1606098088}
   m_CullTransparentMesh: 0
+--- !u!225 &1606098092
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606098088}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1612462177
 Prefab:
   m_ObjectHideFlags: 0
