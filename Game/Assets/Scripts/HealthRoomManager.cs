@@ -37,6 +37,7 @@ public class HealthRoomManager : MonoBehaviour {
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player").gameObject;
             PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            
 
             timer += Time.deltaTime;
             if (timer > 1)
@@ -46,6 +47,12 @@ public class HealthRoomManager : MonoBehaviour {
                 {
                     healing = true;
                     playerHealth.heal(5);
+                    AudioSource heal_audio = GetComponent<AudioSource>();
+                    if (!heal_audio.isPlaying)
+                    {
+                        heal_audio.Play();
+                    }
+                    
                 }
             }
 
@@ -53,8 +60,12 @@ public class HealthRoomManager : MonoBehaviour {
 
         if (healing)
         {
+            
             GameObject.Find("HealImage").GetComponent<Image>().color = flashColour;
             GameObject.Find("HealImage").GetComponent<CanvasGroup>().alpha = 1f;
+            
+
+
 
         }
         else
