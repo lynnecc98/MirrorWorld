@@ -11,6 +11,7 @@ TagManager:
   - Obstacle
   - Boss
   - Books
+  - Water
   layers:
   - Default
   - TransparentFX
