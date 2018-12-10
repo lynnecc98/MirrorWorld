@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4463161560274670}
   - component: {fileID: 114192207090327408}
+  - component: {fileID: 65772743434749448}
   m_Layer: 0
   m_Name: EndRoom
   m_TagString: Untagged
@@ -844,7 +845,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044891799644202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalPosition: {x: 35.49732, y: -6.6809893, z: 94.18595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4226946370921476}
@@ -2711,6 +2712,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.000001, y: 5.0000005, z: 1.0000012}
   m_Center: {x: -7.19978e-21, y: 2.5000002, z: -0.000001400709}
+--- !u!65 &65772743434749448
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1044891799644202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!65 &65809658877810442
 BoxCollider:
   m_ObjectHideFlags: 1

@@ -413,7 +413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4888721912205730}
   - component: {fileID: 114390139901804358}
-  - component: {fileID: 65294420659997852}
+  - component: {fileID: 65748464156951744}
   m_Layer: 0
   m_Name: MiniBossRoom
   m_TagString: Untagged
@@ -2447,18 +2447,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65294420659997852
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1617890790502256}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.243192, y: 2.2854578, z: 10.034332}
-  m_Center: {x: -0.07833862, y: 0.1205138, z: 0.0261302}
 --- !u!65 &65413384226355508
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2483,6 +2471,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 11, z: 0}
   m_Center: {x: 0, y: 5, z: 5}
+--- !u!65 &65748464156951744
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617890790502256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!65 &65790554039167400
 BoxCollider:
   m_ObjectHideFlags: 1
