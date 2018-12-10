@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 47b48f48353647546a3bf6d2780e6bdd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Boole
+    100004: Cloner_SkyRing_Gap
+    100006: Holder_SkyRing_10_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_EndCap^
+    100008: Holder_SkyRing_2_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100010: Holder_SkyRing_3_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100012: Holder_SkyRing_4_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100014: Holder_SkyRing_5_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100016: Holder_SkyRing_6_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100018: Holder_SkyRing_7_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100020: Holder_SkyRing_8_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100022: Holder_SkyRing_9_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    100024: Holder_SkyRing_EndCap
+    100026: Holder_SkyRing_Hollow
+    100028: Skyring
+    100030: SkyRing_2
+    100032: Skyring_2
+    100034: SkyRing_3
+    100036: SkyRing_ScaleDown
+    100038: SkyRing_ScaleDown_2
+    100040: Filler
+    100042: Filler_2
+    100044: Filler_3
+    100046: Filler_4
+    100048: Filler_Instance
+    100050: Holder_SkyRing_2_1
+    100052: Skyring_3
+    100054: SkyRing_4
+    100056: SkyRing_5
+    100058: SkyRing_1
+    100060: SkyRing_1_2
+    100062: SkyRing_1_3
+    100064: SkyRing_1_4
+    100066: SkyRing_2_2
+    100068: SkyRing_2_3
+    100070: SkyRing_2_4
+    400000: //RootNode
+    400002: Boole
+    400004: Cloner_SkyRing_Gap
+    400006: Holder_SkyRing_10_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_EndCap^
+    400008: Holder_SkyRing_2_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400010: Holder_SkyRing_3_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400012: Holder_SkyRing_4_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400014: Holder_SkyRing_5_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400016: Holder_SkyRing_6_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400018: Holder_SkyRing_7_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400020: Holder_SkyRing_8_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400022: Holder_SkyRing_9_^CourtyardSkyring@Cloner_SkyRing_Gap@Holder_SkyRing_Hollow^
+    400024: Holder_SkyRing_EndCap
+    400026: Holder_SkyRing_Hollow
+    400028: Skyring
+    400030: SkyRing_2
+    400032: Skyring_2
+    400034: SkyRing_3
+    400036: SkyRing_ScaleDown
+    400038: SkyRing_ScaleDown_2
+    400040: Filler
+    400042: Filler_2
+    400044: Filler_3
+    400046: Filler_4
+    400048: Filler_Instance
+    400050: Holder_SkyRing_2_1
+    400052: Skyring_3
+    400054: SkyRing_4
+    400056: SkyRing_5
+    400058: SkyRing_1
+    400060: SkyRing_1_2
+    400062: SkyRing_1_3
+    400064: SkyRing_1_4
+    400066: SkyRing_2_2
+    400068: SkyRing_2_3
+    400070: SkyRing_2_4
+    2300000: SkyRing_2
+    2300002: SkyRing_3
+    2300004: Filler_2
+    2300006: Filler_4
+    2300008: SkyRing_5
+    2300010: SkyRing_1_2
+    2300012: SkyRing_1_4
+    2300014: SkyRing_2_2
+    2300016: SkyRing_2_4
+    3300000: SkyRing_2
+    3300002: SkyRing_3
+    3300004: Filler_2
+    3300006: Filler_4
+    3300008: SkyRing_5
+    3300010: SkyRing_1_2
+    3300012: SkyRing_1_4
+    3300014: SkyRing_2_2
+    3300016: SkyRing_2_4
+    4300000: SkyRing_2
+    4300002: SkyRing_3
+    4300004: Filler_2
+    4300006: Filler_4
+    4300008: SkyRing_5
+    4300010: SkyRing_1_2
+    4300012: SkyRing_1_4
+    4300014: SkyRing_2_2
+    4300016: SkyRing_2_4
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRing
+    second: {fileID: 2100000, guid: 21382a14e1ad84d429f31bea42af2302, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRingFiller
+    second: {fileID: 2100000, guid: e614bafc5bb6ffa41b498069680975dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRingFiller.1
+    second: {fileID: 2100000, guid: 4483e99616e45844daa08255ead9bb39, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 30
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

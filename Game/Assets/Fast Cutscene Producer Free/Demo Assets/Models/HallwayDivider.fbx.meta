@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 80b1ef51d0d4f7e41975e06fb23629af
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Beveled Front
+    100004: HallwayDivider001
+    100006: Embossed Front
+    100008: HallwayDivider001_Embossed Front
+    100010: HallwayDivider_InternalDivided.center_bottom
+    100012: HallwayDivider_InternalDivided.center_upper
+    100014: HallwayDivider_InternalDivided.left_bottom
+    100016: HallwayDivider_InternalDivided.left_middle
+    100018: HallwayDivider_InternalDivided.left_upper
+    100020: HallwayDivider_InternalDivided.right_bottom
+    100022: HallwayDivider_InternalDivided.right_middle
+    100024: HallwayDivider_InternalDivided.right_upper
+    100026: HallwayDivider_InternalMirrored
+    100028: APlane
+    100030: HallwayDivider001.extrude embossed
+    100032: 'HallwayDivider001_Embossed '
+    100034: HallwayDivider001_EmbossedDivided .centerbottom
+    100036: HallwayDivider001_EmbossedDivided .centerupper
+    100038: HallwayDivider001_EmbossedDivided .leftbottom
+    100040: HallwayDivider001_EmbossedDivided .leftmiddle
+    100042: HallwayDivider001_EmbossedDivided .leftupper
+    100044: HallwayDivider001_EmbossedDivided .rightbottom
+    100046: HallwayDivider001_EmbossedDivided .rightmiddle
+    100048: HallwayDivider001_EmbossedDivided .rightupper
+    100050: HallwayDivider001_ExternalDivided.centerbottom
+    100052: HallwayDivider001_ExternalDivided.centerupper
+    100054: HallwayDivider001_ExternalDivided.leftbottom
+    100056: HallwayDivider001_ExternalDivided.leftmiddle
+    100058: HallwayDivider001_ExternalDivided.leftupper
+    100060: HallwayDivider001_ExternalDivided.rightbottom
+    100062: HallwayDivider001_ExternalDivided.rightmiddle
+    100064: HallwayDivider001_ExternalDivided.rightupper
+    100066: HallwayDivider_InternalMirrored_Reference
+    400000: //RootNode
+    400002: Beveled Front
+    400004: HallwayDivider001
+    400006: Embossed Front
+    400008: HallwayDivider001_Embossed Front
+    400010: HallwayDivider_InternalDivided.center_bottom
+    400012: HallwayDivider_InternalDivided.center_upper
+    400014: HallwayDivider_InternalDivided.left_bottom
+    400016: HallwayDivider_InternalDivided.left_middle
+    400018: HallwayDivider_InternalDivided.left_upper
+    400020: HallwayDivider_InternalDivided.right_bottom
+    400022: HallwayDivider_InternalDivided.right_middle
+    400024: HallwayDivider_InternalDivided.right_upper
+    400026: HallwayDivider_InternalMirrored
+    400028: APlane
+    400030: HallwayDivider001.extrude embossed
+    400032: 'HallwayDivider001_Embossed '
+    400034: HallwayDivider001_EmbossedDivided .centerbottom
+    400036: HallwayDivider001_EmbossedDivided .centerupper
+    400038: HallwayDivider001_EmbossedDivided .leftbottom
+    400040: HallwayDivider001_EmbossedDivided .leftmiddle
+    400042: HallwayDivider001_EmbossedDivided .leftupper
+    400044: HallwayDivider001_EmbossedDivided .rightbottom
+    400046: HallwayDivider001_EmbossedDivided .rightmiddle
+    400048: HallwayDivider001_EmbossedDivided .rightupper
+    400050: HallwayDivider001_ExternalDivided.centerbottom
+    400052: HallwayDivider001_ExternalDivided.centerupper
+    400054: HallwayDivider001_ExternalDivided.leftbottom
+    400056: HallwayDivider001_ExternalDivided.leftmiddle
+    400058: HallwayDivider001_ExternalDivided.leftupper
+    400060: HallwayDivider001_ExternalDivided.rightbottom
+    400062: HallwayDivider001_ExternalDivided.rightmiddle
+    400064: HallwayDivider001_ExternalDivided.rightupper
+    400066: HallwayDivider_InternalMirrored_Reference
+    2300000: //RootNode
+    2300002: Beveled Front
+    2300004: HallwayDivider001
+    2300006: Embossed Front
+    2300008: HallwayDivider001_Embossed Front
+    2300010: HallwayDivider_InternalDivided.center_bottom
+    2300012: HallwayDivider_InternalDivided.center_upper
+    2300014: HallwayDivider_InternalDivided.left_bottom
+    2300016: HallwayDivider_InternalDivided.left_middle
+    2300018: HallwayDivider_InternalDivided.left_upper
+    2300020: HallwayDivider_InternalDivided.right_bottom
+    2300022: HallwayDivider_InternalDivided.right_middle
+    2300024: HallwayDivider_InternalDivided.right_upper
+    2300026: HallwayDivider_InternalMirrored
+    2300028: APlane
+    2300030: HallwayDivider001.extrude embossed
+    2300032: 'HallwayDivider001_Embossed '
+    2300034: HallwayDivider001_EmbossedDivided .centerbottom
+    2300036: HallwayDivider001_EmbossedDivided .centerupper
+    2300038: HallwayDivider001_EmbossedDivided .leftbottom
+    2300040: HallwayDivider001_EmbossedDivided .leftmiddle
+    2300042: HallwayDivider001_EmbossedDivided .leftupper
+    2300044: HallwayDivider001_EmbossedDivided .rightbottom
+    2300046: HallwayDivider001_EmbossedDivided .rightmiddle
+    2300048: HallwayDivider001_EmbossedDivided .rightupper
+    2300050: HallwayDivider001_ExternalDivided.centerbottom
+    2300052: HallwayDivider001_ExternalDivided.centerupper
+    2300054: HallwayDivider001_ExternalDivided.leftbottom
+    2300056: HallwayDivider001_ExternalDivided.leftmiddle
+    2300058: HallwayDivider001_ExternalDivided.leftupper
+    2300060: HallwayDivider001_ExternalDivided.rightbottom
+    2300062: HallwayDivider001_ExternalDivided.rightmiddle
+    2300064: HallwayDivider001_ExternalDivided.rightupper
+    2300066: HallwayDivider_InternalMirrored_Reference
+    3300000: //RootNode
+    3300002: Beveled Front
+    3300004: HallwayDivider001
+    3300006: Embossed Front
+    3300008: HallwayDivider001_Embossed Front
+    3300010: HallwayDivider_InternalDivided.center_bottom
+    3300012: HallwayDivider_InternalDivided.center_upper
+    3300014: HallwayDivider_InternalDivided.left_bottom
+    3300016: HallwayDivider_InternalDivided.left_middle
+    3300018: HallwayDivider_InternalDivided.left_upper
+    3300020: HallwayDivider_InternalDivided.right_bottom
+    3300022: HallwayDivider_InternalDivided.right_middle
+    3300024: HallwayDivider_InternalDivided.right_upper
+    3300026: HallwayDivider_InternalMirrored
+    3300028: APlane
+    3300030: HallwayDivider001.extrude embossed
+    3300032: 'HallwayDivider001_Embossed '
+    3300034: HallwayDivider001_EmbossedDivided .centerbottom
+    3300036: HallwayDivider001_EmbossedDivided .centerupper
+    3300038: HallwayDivider001_EmbossedDivided .leftbottom
+    3300040: HallwayDivider001_EmbossedDivided .leftmiddle
+    3300042: HallwayDivider001_EmbossedDivided .leftupper
+    3300044: HallwayDivider001_EmbossedDivided .rightbottom
+    3300046: HallwayDivider001_EmbossedDivided .rightmiddle
+    3300048: HallwayDivider001_EmbossedDivided .rightupper
+    3300050: HallwayDivider001_ExternalDivided.centerbottom
+    3300052: HallwayDivider001_ExternalDivided.centerupper
+    3300054: HallwayDivider001_ExternalDivided.leftbottom
+    3300056: HallwayDivider001_ExternalDivided.leftmiddle
+    3300058: HallwayDivider001_ExternalDivided.leftupper
+    3300060: HallwayDivider001_ExternalDivided.rightbottom
+    3300062: HallwayDivider001_ExternalDivided.rightmiddle
+    3300064: HallwayDivider001_ExternalDivided.rightupper
+    3300066: HallwayDivider_InternalMirrored_Reference
+    4300000: Divider001
+    4300002: HallwayDivider001
+    4300004: Beveled Front
+    4300006: Embossed Front
+    4300008: HallwayDivider_InternalDivided.center_bottom
+    4300010: HallwayDivider_InternalDivided.left_middle
+    4300012: HallwayDivider_InternalDivided.right_bottom
+    4300014: HallwayDivider_InternalDivided.center_upper
+    4300016: HallwayDivider_InternalDivided.left_upper
+    4300018: HallwayDivider_InternalDivided.left_bottom
+    4300020: HallwayDivider_InternalDivided.right_upper
+    4300022: HallwayDivider_InternalDivided.right_middle
+    4300024: HallwayDivider_InternalMirrored
+    4300026: HallwayDivider001_Embossed Front
+    4300028: APlane
+    4300030: HallwayDivider001_EmbossedDivided .rightupper
+    4300032: HallwayDivider001_EmbossedDivided .rightbottom
+    4300034: HallwayDivider001_EmbossedDivided .centerbottom
+    4300036: HallwayDivider001_EmbossedDivided .leftupper
+    4300038: HallwayDivider001_EmbossedDivided .centerupper
+    4300040: HallwayDivider001_ExternalDivided.leftbottom
+    4300042: HallwayDivider001_ExternalDivided.rightupper
+    4300044: HallwayDivider001_ExternalDivided.leftupper
+    4300046: HallwayDivider001_ExternalDivided.centerbottom
+    4300048: HallwayDivider001_ExternalDivided.centerupper
+    4300050: HallwayDivider001_ExternalDivided.leftmiddle
+    4300052: HallwayDivider001_EmbossedDivided .rightmiddle
+    4300054: HallwayDivider001_EmbossedDivided .leftmiddle
+    4300056: HallwayDivider001.extrude embossed
+    4300058: HallwayDivider001_ExternalDivided.rightmiddle
+    4300060: HallwayDivider_InternalMirrored_Reference
+    4300062: HallwayDivider001_EmbossedDivided .leftbottom
+    4300064: HallwayDivider001_ExternalDivided.rightbottom
+    4300066: 'HallwayDivider001_Embossed '
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

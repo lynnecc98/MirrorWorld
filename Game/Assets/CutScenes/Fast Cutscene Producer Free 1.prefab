@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineType:
     lineString: ACTOR=BlackPanel ACTION=enter KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
-      ASYNC=FALSE FADETIME=0 INTERVAL=0
+      ASYNC=FALSE INTERVAL=0
     booleanKeys:
     - ASYNC
     - DESACCEL

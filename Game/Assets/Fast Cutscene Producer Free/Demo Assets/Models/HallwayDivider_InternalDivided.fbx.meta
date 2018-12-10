@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: d54d651ccb7a4cc43925d26ad57777b4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: HallwayDivider_InternalDivided.center_bottom
+    100004: HallwayDivider_InternalDivided.center_upper
+    100006: HallwayDivider_InternalDivided.left_bottom
+    100008: HallwayDivider_InternalDivided.left_middle
+    100010: HallwayDivider_InternalDivided.left_upper
+    100012: HallwayDivider_InternalDivided.right_bottom
+    100014: HallwayDivider_InternalDivided.right_middle
+    100016: HallwayDivider_InternalDivided.right_upper
+    400000: //RootNode
+    400002: HallwayDivider_InternalDivided.center_bottom
+    400004: HallwayDivider_InternalDivided.center_upper
+    400006: HallwayDivider_InternalDivided.left_bottom
+    400008: HallwayDivider_InternalDivided.left_middle
+    400010: HallwayDivider_InternalDivided.left_upper
+    400012: HallwayDivider_InternalDivided.right_bottom
+    400014: HallwayDivider_InternalDivided.right_middle
+    400016: HallwayDivider_InternalDivided.right_upper
+    2300000: HallwayDivider_InternalDivided.center_bottom
+    2300002: HallwayDivider_InternalDivided.center_upper
+    2300004: HallwayDivider_InternalDivided.left_bottom
+    2300006: HallwayDivider_InternalDivided.left_middle
+    2300008: HallwayDivider_InternalDivided.left_upper
+    2300010: HallwayDivider_InternalDivided.right_bottom
+    2300012: HallwayDivider_InternalDivided.right_middle
+    2300014: HallwayDivider_InternalDivided.right_upper
+    3300000: HallwayDivider_InternalDivided.center_bottom
+    3300002: HallwayDivider_InternalDivided.center_upper
+    3300004: HallwayDivider_InternalDivided.left_bottom
+    3300006: HallwayDivider_InternalDivided.left_middle
+    3300008: HallwayDivider_InternalDivided.left_upper
+    3300010: HallwayDivider_InternalDivided.right_bottom
+    3300012: HallwayDivider_InternalDivided.right_middle
+    3300014: HallwayDivider_InternalDivided.right_upper
+    4300000: HallwayDivider_InternalDivided.center_bottom
+    4300002: HallwayDivider_InternalDivided.left_middle
+    4300004: HallwayDivider_InternalDivided.right_bottom
+    4300006: HallwayDivider_InternalDivided.center_upper
+    4300008: HallwayDivider_InternalDivided.left_upper
+    4300010: HallwayDivider_InternalDivided.left_bottom
+    4300012: HallwayDivider_InternalDivided.right_upper
+    4300014: HallwayDivider_InternalDivided.right_middle
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HallwayDivider
+    second: {fileID: 2100000, guid: 835e1080b56f59341824c355ad3969cd, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

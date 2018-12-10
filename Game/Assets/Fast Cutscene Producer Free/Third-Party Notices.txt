@@ -1,0 +1,25 @@
+This asset is governed by the Asset Store EULA; however, the following component are governed by the license indicated below:
+
+Unity-Chan
+License: Unity-Chan License
+Asset Author:   Unity-chan! 
+License Link: https://unity-chan.com/contents/license_en
+License Summary Link: http://unity-chan.com/contents/license_sum_en/
+
+License Summary:
+"What you can do under this License:
+-Creation of the secondary work of the Unity Characters;
+-Publication and Distribution, etc. of the created secondary work; and
+-Distribution, etc. of the newly created digital asset data of the Unity Characters on condition that a third party who is going to use the same agrees to be bound by this License. 
+What you cannot do under this License:
+-Use of the Unity Characters for advertisement and promotion in a manner that implies that you own its copyright;
+-Use of a third party work by pretending that it is the creator’s work;
+-Use of the work or characters, the rights in and to which are owned by a third party, along with the Unity Characters, without acquiring such third party’s approval;
+-Use the Unity Characters in a manner that would harm the value or dignity of the Company and the Unity Characters;
+-Use of the Unity Characters for the purpose of giving displeasure to, or discriminating or hurting any third party;
+-Use of the Unity Characters for any remark that is prejudiced religiously or politically; or
+-Use of a work in a manner that may mislead the public to believe that such work is the official product of the Company, without the Company’s approval."
+
+
+
+
