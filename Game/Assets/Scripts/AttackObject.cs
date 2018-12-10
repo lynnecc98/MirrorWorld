@@ -20,7 +20,6 @@ public class AttackObject : MonoBehaviour {
             
         }
         Destroy(this.gameObject, 0.1f);
-        print(c.gameObject.name);
     }
 
     void Update()

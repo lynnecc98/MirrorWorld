@@ -11,7 +11,6 @@ public class HallwayTrigger : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("triggered");
                 triggered = !triggered;
                 AudioSource sparkle = GetComponent<AudioSource>();
                 sparkle.Play();
