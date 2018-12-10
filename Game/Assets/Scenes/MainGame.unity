@@ -8881,17 +8881,17 @@ MonoBehaviour:
   - {fileID: 1212864811}
   - {fileID: 1633295890}
   EnemyRoom:
-  - {fileID: 1730285527203966, guid: 85ffca52cdbafb34c87c247fa5304c57, type: 2}
-  - {fileID: 1246784551093002, guid: 52000a7dda821b1468a691cd2a75ab34, type: 2}
-  TriggerRoom: {fileID: 1402952052087368, guid: 356d803bc2e9cde469356d4e7013d417,
+  - {fileID: 1735268821098392, guid: f50ebb8ea4eec2e49bf781113414a070, type: 2}
+  - {fileID: 1791544700370358, guid: aa1d449f32e344147bbe1a4abe2ac4e7, type: 2}
+  TriggerRoom: {fileID: 1402952052087368, guid: cf9f2460b09cfcd4d83b679cc82c8cba,
     type: 2}
-  HealthRoom: {fileID: 1233465462975504, guid: ad4198f35a0d54e89a221c567c07f7eb, type: 2}
-  StartingRoom: {fileID: 1296830474630716, guid: ae453727938fcd944a9a1df92c9878be,
+  HealthRoom: {fileID: 1233465462975504, guid: 20029c277c1b51d4b9bf6dd6d790e87b, type: 2}
+  StartingRoom: {fileID: 1296830474630716, guid: ba254add569ab9f4581eee12206deb49,
     type: 2}
   endRoom: {fileID: 1044891799644202, guid: 745f6db6152ed4b60a7f0bca3258a28a, type: 2}
-  keyRoom: {fileID: 1960865219538524, guid: c4b24e1deef8840c285cc0c676add88f, type: 2}
-  bossRoom: {fileID: 1617890790502256, guid: ccda657f321125c41a1f710055557613, type: 2}
-  bridge: {fileID: 1993236170341636, guid: dded9dea002fb479a9e74c515468bf6c, type: 2}
+  keyRoom: {fileID: 1960865219538524, guid: 3fcc40dd6ddedaf448bed0bfbc92c483, type: 2}
+  bossRoom: {fileID: 1617890790502256, guid: bac237f83422f504bb2d861777e935c3, type: 2}
+  bridge: {fileID: 1270740910367612, guid: c45610f571946a74fa6a3b6051f8aa30, type: 2}
   trig: {fileID: 1489004239559720, guid: 856ad8c153196a04db0611d4b642c80f, type: 2}
   playr: {fileID: 1050091320}
 --- !u!114 &690340221
