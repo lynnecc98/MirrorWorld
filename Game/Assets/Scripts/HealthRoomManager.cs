@@ -63,9 +63,6 @@ public class HealthRoomManager : MonoBehaviour {
             
             GameObject.Find("HealImage").GetComponent<Image>().color = flashColour;
             GameObject.Find("HealImage").GetComponent<CanvasGroup>().alpha = 1f;
-            
-
-
 
         }
         else
