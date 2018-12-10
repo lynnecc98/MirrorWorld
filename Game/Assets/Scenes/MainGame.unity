@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5402747, g: 0.6172794, b: 0.74705654, a: 1}
+  m_IndirectSpecularColor: {r: 0.5403234, g: 0.61728996, b: 0.7470546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5285,7 +5285,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8021,7 +8021,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14718,7 +14718,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4422338931104976, guid: da24672af79d5b04da5388660c6aabd9, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4422338931104976, guid: da24672af79d5b04da5388660c6aabd9, type: 2}
       propertyPath: m_LocalScale.x
@@ -21735,7 +21735,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4808980466573868, guid: 6a889e51049401145a5079a85e07a9ed, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4808980466573868, guid: 6a889e51049401145a5079a85e07a9ed, type: 2}
       propertyPath: m_LocalScale.x
@@ -24561,8 +24561,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1677331621}
-  m_LocalRotation: {x: 0.082145944, y: 0.19755605, z: 0.016632857, w: -0.9767021}
-  m_LocalPosition: {x: 25.75, y: 1.7499995, z: 6.93}
+  m_LocalRotation: {x: 0.044405784, y: 0.8098858, z: 0.58162695, w: -0.06183264}
+  m_LocalPosition: {x: 1.9395511, y: 3.5804963, z: -0.955139}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -26251,7 +26251,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4259476636638104, guid: cf9f2460b09cfcd4d83b679cc82c8cba, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4038718952013834, guid: cf9f2460b09cfcd4d83b679cc82c8cba, type: 2}
       propertyPath: m_RootOrder
@@ -26267,7 +26267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4085747266929224, guid: cf9f2460b09cfcd4d83b679cc82c8cba, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4707169595258166, guid: cf9f2460b09cfcd4d83b679cc82c8cba, type: 2}
       propertyPath: m_RootOrder
@@ -29762,7 +29762,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -30503,7 +30503,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
