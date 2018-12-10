@@ -26,6 +26,8 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead  == true)
         {
+            AudioSource enemy_death = GetComponent<AudioSource>();
+            enemy_death.Play();
             Destroy(gameObject, 0.5f);
         }
     }
