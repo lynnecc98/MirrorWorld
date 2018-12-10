@@ -18060,7 +18060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControllableCharacters:
-  - {fileID: 0}
+  - {fileID: 1050091328}
   thirdPersonCamera: {fileID: 976490530}
   CameraPositionMarkerName: CamPos
 --- !u!4 &1302379758
@@ -19786,7 +19786,7 @@ Transform:
   - {fileID: 1106015157}
   - {fileID: 2000589518}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1441114171
 GameObject:
@@ -22478,7 +22478,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1649286630
 GameObject:
@@ -23173,12 +23173,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1677331621}
-  m_LocalRotation: {x: -0.65233845, y: 0.096890755, z: 0.08462015, w: 0.74693114}
-  m_LocalPosition: {x: 55.62577, y: -171.81186, z: 81.87553}
+  m_LocalRotation: {x: 0.37822914, y: 0.00833151, z: 0.0034044127, w: -0.92566824}
+  m_LocalPosition: {x: 1.7412162, y: 3.5437222, z: -1.9301206}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!45 &1677331624
 Skybox:
@@ -26030,7 +26030,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1899340604}
   - component: {fileID: 1899340603}
-  - component: {fileID: 1899340602}
   m_Layer: 0
   m_Name: MiniMapCam
   m_TagString: Untagged
@@ -26038,18 +26037,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1899340602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1899340601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc2f58d3fe602784cb11fc185d6a0871, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!20 &1899340603
 Camera:
   m_ObjectHideFlags: 0
