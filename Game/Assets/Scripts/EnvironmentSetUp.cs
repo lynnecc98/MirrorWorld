@@ -85,7 +85,6 @@ public class EnvironmentSetUp : MonoBehaviour {
             if(rooms[i] == roomType.enemyRoomR || rooms[i] == roomType.enemyRoomB || rooms[i] == roomType.enemyRoomG) 
             {
                 int random = Random.Range(0, 2);
-                print(random);
                 GameObject temp =  Instantiate(EnemyRoom[random], floor[i].transform.position, floor[i].transform.rotation);
                 elementType tempElement = temp.GetComponent<elementType>();
                 if (rooms[i] == roomType.enemyRoomR)
