@@ -880,8 +880,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4417270871711284}
   - component: {fileID: 114777095864766460}
-  - component: {fileID: 65397200610062738}
   - component: {fileID: 114161040671725118}
+  - component: {fileID: 65397200610062738}
   m_Layer: 0
   m_Name: EnemyRoom Red
   m_TagString: Untagged
