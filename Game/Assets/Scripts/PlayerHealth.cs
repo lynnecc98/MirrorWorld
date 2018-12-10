@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public bool damaged;
     public bool isDead = false;
     public Slider healthSlider;
+    public AudioClip falling;
 
 
 
@@ -43,10 +44,17 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject, 2f);
             SceneManager.LoadScene("LoseScene");
         }
-        if (player.transform.position.y < -9)
+        if (player.transform.position.y < 0)
+        {
+            AudioSource fall = GetComponent<AudioSource>();
+            fall.PlayOneShot(falling, 0.1F);
+        }
+
+        if (player.transform.position.y < -20)
         {
             isDead = true;
         }
+        
     }
 
     public void TakeDamage(int amount)
