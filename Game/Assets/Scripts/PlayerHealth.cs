@@ -61,8 +61,11 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        AudioSource hurt = GetComponent<AudioSource>();
-        hurt.PlayOneShot(player_hurt, 0.5F);
+        if (Random.Range(1, 3) == 1)
+        {
+            AudioSource hurt = GetComponent<AudioSource>();
+            hurt.PlayOneShot(player_hurt, 0.5F);
+        }
 
         damaged = true;
 
