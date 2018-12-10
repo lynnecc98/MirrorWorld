@@ -9,7 +9,7 @@ public class Attack : MonoBehaviour {
     public int damagePerShot = 25;
     public float timeBetweenBullets = 0.15f;
 
-    public AudioClip laser;
+    //public AudioClip laser;
 
     public bool animShoot = false;
 

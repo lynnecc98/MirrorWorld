@@ -45,6 +45,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            
             Death();
         }
     }
@@ -52,8 +53,9 @@ public class EnemyHealth : MonoBehaviour
     public void Death()
     {
         isDead = true;
+        
 
-        if(this.CompareTag("Boss")) { 
+        if (this.CompareTag("Boss")) { 
             miniBossCount++;
             if (miniBossCount == 1)
             {
