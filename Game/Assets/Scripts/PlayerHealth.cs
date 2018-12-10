@@ -14,7 +14,9 @@ public class PlayerHealth : MonoBehaviour
     public bool damaged;
     public bool isDead = false;
     public Slider healthSlider;
+
     public AudioClip falling;
+    public AudioClip player_hurt;
 
 
 
@@ -59,6 +61,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        AudioSource hurt = GetComponent<AudioSource>();
+        hurt.PlayOneShot(player_hurt, 0.5F);
 
         damaged = true;
 
