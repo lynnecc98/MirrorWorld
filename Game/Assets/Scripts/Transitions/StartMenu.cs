@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameStart : MonoBehaviour
-{
+public class StartMenu : MonoBehaviour {
 
     // Use this for initialization
     public void StartGame()
     {
-        SceneManager.LoadScene("CutSceneAnim");
+        SceneManager.LoadScene("StartMenu");
         Time.timeScale = 1f;
     }
-
 }

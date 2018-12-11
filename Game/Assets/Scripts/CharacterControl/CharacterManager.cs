@@ -38,7 +38,6 @@ public class CharacterManager : MonoBehaviour {
 
         thirdPersonCamera.desiredPose = ControllableCharacters[charIndex].transform.Find(CameraPositionMarkerName);
 
-        Debug.Log("Character " + ControllableCharacters[charIndex].Name + " was selected.");
    
     }
 
