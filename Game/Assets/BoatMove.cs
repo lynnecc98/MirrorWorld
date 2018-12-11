@@ -8,6 +8,7 @@ public class BoatMove : MonoBehaviour {
     bool onBoat = false;
     float counter = 0;
     Vector3 oldpos;
+    //Quaternion oldrot;
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +37,14 @@ public class BoatMove : MonoBehaviour {
         if (onBoat)
         {
             player.transform.position = player.transform.position + (this.transform.position - oldpos);
+            /*player.transform.rotation = new Quaternion( 
+                player.transform.rotation.x + (this.transform.rotation.x - oldrot.x), 
+                player.transform.rotation.y + (this.transform.rotation.y - oldrot.y), 
+                player.transform.rotation.z + (this.transform.rotation.z - oldrot.z),
+                player.transform.rotation.w + (this.transform.rotation.w - oldrot.w)
+                );*/
         }
         oldpos = this.transform.position;
+        //oldrot = this.transform.rotation;
     }
 }
