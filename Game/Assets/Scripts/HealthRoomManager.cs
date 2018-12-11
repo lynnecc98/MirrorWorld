@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HealthRoomManager : MonoBehaviour {
 
+    private Animator anim;
     float timer = 0;
     bool inRoom = false;
     public bool healing;
@@ -18,6 +19,8 @@ public class HealthRoomManager : MonoBehaviour {
         if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
         {
             inRoom = true;
+            anim = other.GetComponent<Animator>();
+            anim.SetBool("healing", true);
         }
     }
 
@@ -27,6 +30,8 @@ public class HealthRoomManager : MonoBehaviour {
         {
             inRoom = false;
             GameObject.Find("HealImage").GetComponent<CanvasGroup>().alpha = 0f;
+            anim = other.GetComponent<Animator>();
+            anim.SetBool("healing", false);
         }
     }
 

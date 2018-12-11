@@ -18,12 +18,13 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip falling;
     public AudioClip player_hurt;
 
-
+    private Animator anim;
 
     void Awake()
     {
         currentHealth = startingHealth;
         player = GameObject.FindGameObjectWithTag("Player");
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -33,11 +34,13 @@ public class PlayerHealth : MonoBehaviour
         {
             damageImage.color = flashColour;
             GameObject.Find("DamageImage").GetComponent<CanvasGroup>().alpha = 1f;
+            anim.SetBool("damaged", true);
         }
         else
         {
             damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
             GameObject.Find("DamageImage").GetComponent<CanvasGroup>().alpha = 0f;
+            anim.SetBool("damaged", false);
         }
         damaged = false;
 
