@@ -8,6 +8,8 @@ public class AttackObject : MonoBehaviour {
     float timer = 0;
     public float alive = 0.5f;
 
+    //public AudioClip collision;
+
     void OnTriggerEnter(Collider c)
     {
         if (c.attachedRigidbody != null)
@@ -16,6 +18,10 @@ public class AttackObject : MonoBehaviour {
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damagePerShot);
+            } else {
+                AudioSource collision = GetComponent<AudioSource>();
+                //collision_sound.PlayOneShot(collision, 1F);
+                collision.Play();
             }
             
         }
