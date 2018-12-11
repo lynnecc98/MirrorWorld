@@ -55,8 +55,6 @@ public class EnemyAtk : MonoBehaviour {
         if (playerHealth.currentHealth > 0)
         {
             playerHealth.TakeDamage(attackDamage);
-            Rigidbody temp = this.GetComponent<Rigidbody>();
-            temp.AddForce(this.transform.forward * -1.0f * 500.0f);
         }
     }
 }

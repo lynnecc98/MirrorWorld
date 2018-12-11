@@ -15,12 +15,16 @@ public class PlayerHealth : MonoBehaviour
     public bool isDead = false;
     public Slider healthSlider;
 
+    public AudioClip falling;
+    public AudioClip player_hurt;
 
+    private Animator anim;
 
     void Awake()
     {
         currentHealth = startingHealth;
         player = GameObject.FindGameObjectWithTag("Player");
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -30,11 +34,13 @@ public class PlayerHealth : MonoBehaviour
         {
             damageImage.color = flashColour;
             GameObject.Find("DamageImage").GetComponent<CanvasGroup>().alpha = 1f;
+            anim.SetBool("damaged", true);
         }
         else
         {
             damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
             GameObject.Find("DamageImage").GetComponent<CanvasGroup>().alpha = 0f;
+            anim.SetBool("damaged", false);
         }
         damaged = false;
 
@@ -43,14 +49,26 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject, 2f);
             SceneManager.LoadScene("LoseScene");
         }
-        if (player.transform.position.y < -9)
+        if (player.transform.position.y < 0)
+        {
+            AudioSource fall = GetComponent<AudioSource>();
+            fall.PlayOneShot(falling, 0.1F);
+        }
+
+        if (player.transform.position.y < -20)
         {
             isDead = true;
         }
+        
     }
 
     public void TakeDamage(int amount)
     {
+        if (Random.Range(1, 3) == 1)
+        {
+            AudioSource hurt = GetComponent<AudioSource>();
+            hurt.PlayOneShot(player_hurt, 0.5F);
+        }
 
         damaged = true;
 

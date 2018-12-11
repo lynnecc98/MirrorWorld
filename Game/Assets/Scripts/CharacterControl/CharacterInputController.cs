@@ -53,7 +53,7 @@ public class CharacterInputController : MonoBehaviour {
         else if (Input.GetKey(KeyCode.E))
             h = 0.5f;
 
-        if (Input.GetKeyUp(KeyCode.Alpha1))
+        /*if (Input.GetKeyUp(KeyCode.Alpha1))
             forwardSpeedLimit = 0.1f;
         else if (Input.GetKeyUp(KeyCode.Alpha2))
             forwardSpeedLimit = 0.2f;
@@ -72,7 +72,7 @@ public class CharacterInputController : MonoBehaviour {
         else if (Input.GetKeyUp(KeyCode.Alpha9))
             forwardSpeedLimit = 0.9f;
         else if (Input.GetKeyUp(KeyCode.Alpha0))
-            forwardSpeedLimit = 1.0f;
+            forwardSpeedLimit = 1.0f;*/
         //END ANALOG ON KEYBOARD DEMO CODE  
 
 

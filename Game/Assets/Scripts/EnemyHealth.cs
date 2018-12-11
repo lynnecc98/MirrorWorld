@@ -10,6 +10,9 @@ public class EnemyHealth : MonoBehaviour
 
     public static int miniBossCount = 0;
 
+    public AudioClip enemy_death;
+    public AudioClip enemy_hurt;
+
     elementType element;
     ChangeType change;
 
@@ -26,8 +29,9 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead  == true)
         {
-            AudioSource enemy_death = GetComponent<AudioSource>();
-            enemy_death.Play();
+            AudioSource death = GetComponent<AudioSource>();
+            //enemy_death.Play();
+            death.PlayOneShot(enemy_death, 1F);
             Destroy(gameObject, 0.5f);
         }
     }
@@ -36,15 +40,14 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead)
             return;
-
+        AudioSource hurt = GetComponent<AudioSource>();
+        hurt.PlayOneShot(enemy_hurt, 0.5F);
         currentHealth -= amount;
 
-        Rigidbody temp = this.GetComponent<Rigidbody>();
-
-        temp.AddForce(this.transform.forward*-1.0f*500.0f);
 
         if (currentHealth <= 0)
         {
+            
             Death();
         }
     }
@@ -52,8 +55,9 @@ public class EnemyHealth : MonoBehaviour
     public void Death()
     {
         isDead = true;
+        
 
-        if(this.CompareTag("Boss")) { 
+        if (this.CompareTag("Boss")) { 
             miniBossCount++;
             if (miniBossCount == 1)
             {

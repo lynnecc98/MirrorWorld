@@ -12,7 +12,9 @@ public class ObstacleInteraction : MonoBehaviour {
         {
             KeyCollector bc = c.attachedRigidbody.gameObject.GetComponent<KeyCollector>();
             if (bc.hasKey){
-                Destroy(this.gameObject);
+                AudioSource door_open = GetComponent<AudioSource>();
+                door_open.Play();
+                Destroy(this.gameObject, 1F);
             }
         }
     }
