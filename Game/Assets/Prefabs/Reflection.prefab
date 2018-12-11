@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4753812383581112}
   - component: {fileID: 95807363291749752}
-  - component: {fileID: 114460234399110948}
   - component: {fileID: 114171238694238024}
   m_Layer: 0
   m_Name: Reflection
@@ -1877,17 +1876,6 @@ MonoBehaviour:
   colliders: []
   debug: 1
   threshold: 0.01
---- !u!114 &114460234399110948
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1028789411567824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ba25a962d71894b8027f5e230790df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114464897665103810
 MonoBehaviour:
   m_ObjectHideFlags: 1

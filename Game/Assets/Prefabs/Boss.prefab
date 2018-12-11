@@ -120,7 +120,6 @@ GameObject:
   - component: {fileID: 136661589232592798}
   - component: {fileID: 195391792615427952}
   - component: {fileID: 114410679786079374}
-  - component: {fileID: 114030536723918818}
   - component: {fileID: 82857492043373268}
   - component: {fileID: 82522508129982448}
   m_Layer: 0
@@ -595,17 +594,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114030536723918818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534008593141598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 525a16d28d0b53748a9de0f300eb36be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114410679786079374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -618,7 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyState: 0
-  spawnpoint: {fileID: 0}
+  spawnpoint: {fileID: 4337101207565418}
 --- !u!114 &114699513065140430
 MonoBehaviour:
   m_ObjectHideFlags: 1

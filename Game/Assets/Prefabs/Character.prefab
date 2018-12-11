@@ -675,7 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyState: 0
-  spawnpoint: {fileID: 0}
+  spawnpoint: {fileID: 400000}
 --- !u!114 &114637586434801702
 MonoBehaviour:
   m_ObjectHideFlags: 1
