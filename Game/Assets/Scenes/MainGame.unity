@@ -20856,6 +20856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647180164}
   - component: {fileID: 1647180163}
+  - component: {fileID: 1647180165}
   m_Layer: 0
   m_Name: Water4SimpleReflectionSceneCamera
   m_TagString: Untagged
@@ -20909,13 +20910,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647180162}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 74.71199, y: -24.247276, z: 49.8895}
+  m_LocalRotation: {x: 0.41164005, y: 0.22257319, z: 0.10439861, w: -0.8775617}
+  m_LocalPosition: {x: 81.33895, y: -51.270832, z: 26.963936}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1647180165
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647180162}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1649286630
 GameObject:
   m_ObjectHideFlags: 0
@@ -21609,8 +21618,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1677331621}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 402, y: -106.66, z: -2756.0276}
+  m_LocalRotation: {x: 0.41164005, y: 0.22257319, z: 0.10439861, w: -0.8775617}
+  m_LocalPosition: {x: 94.59067, y: -51.825214, z: 30.224087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -39,9 +39,6 @@ public class EnemyHealth : MonoBehaviour
 
         currentHealth -= amount;
 
-        Rigidbody temp = this.GetComponent<Rigidbody>();
-
-        temp.AddForce(this.transform.forward*-1.0f*500.0f);
 
         if (currentHealth <= 0)
         {
