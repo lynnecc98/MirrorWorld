@@ -4382,7 +4382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reflection: {fileID: 1028789411567824, guid: 30daea162f311cd438c04f87c9d1dae5, type: 2}
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 4463161560274670}
 --- !u!114 &114287994945313034
 MonoBehaviour:
   m_ObjectHideFlags: 1
