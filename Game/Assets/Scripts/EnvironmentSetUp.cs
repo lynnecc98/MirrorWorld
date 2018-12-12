@@ -48,7 +48,8 @@ public class EnvironmentSetUp : MonoBehaviour {
     // Use this for initialization
     void Start () {
         curBridges = new List<GameObject>();
-		for(int i = 0; i< 3; i++)
+        rooms.Add(player);
+        for (int i = 0; i< 3; i++)
         {
             rooms.Add(enemy1);
         }
@@ -64,7 +65,6 @@ public class EnvironmentSetUp : MonoBehaviour {
         {
             rooms.Add(boss);
         }
-        rooms.Add(player);
         rooms.Add(health);
         rooms.Add(trigger);
         rooms.Add(goal);
@@ -135,10 +135,11 @@ public class EnvironmentSetUp : MonoBehaviour {
         {
             if (bridgeMap1[i] == 1)
             {
-                GameObject temp = Instantiate(bridge, BridgeL[i].transform.position, BridgeL[i].transform.rotation);
-                curBridges.Add(temp);
+                    GameObject temp = Instantiate(bridge, BridgeL[i].transform.position, BridgeL[i].transform.rotation);
+                    curBridges.Add(temp);
             }
         }
+
 
 
 
