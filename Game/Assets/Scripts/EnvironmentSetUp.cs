@@ -71,7 +71,7 @@ public class EnvironmentSetUp : MonoBehaviour {
         rooms.Add(key);
 
 
-        for(int i = 0; i < rooms.Count; i++)
+        for(int i = 1; i < rooms.Count; i++)
         {
             roomType temp = rooms[i];
             int index = Random.Range(i, rooms.Count);
