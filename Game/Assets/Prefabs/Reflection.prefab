@@ -1423,7 +1423,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1028789411567824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.792597, y: -0.5580634, z: 104.83868}
+  m_LocalPosition: {x: 46.577274, y: 4.5651436, z: 94.98876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4645243322916110}
@@ -1496,8 +1496,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1490558203074782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.8875, z: 1}
+  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalScale: {x: 1, y: 2.8142626, z: 1}
   m_Children: []
   m_Father: {fileID: 4753812383581112}
   m_RootOrder: 2
@@ -1644,20 +1644,12 @@ Animator:
   m_GameObject: {fileID: 1028789411567824}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 309d585ba9505cc408f8720b7b078393, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9f8280fc9e5139145b3d226a13a12e21, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed by
-    Humanoid clips.\n\tTransform 'Character1_RightFoot'\n\tTransform 'Character1_LeftFoot'\n\tTransform
-    'Character1_RightHand'\n\tTransform 'Character1_LeftHand'\n\tTransform 'Character1_LeftLeg'\n\tTransform
-    'Character1_Head'\n\tTransform 'Character1_Neck'\n\tTransform 'Character1_RightLeg'\n\tTransform
-    'Character1_Hips'\n\tTransform 'Character1_LeftForeArm'\n\tand more ...\n\tFrom
-    animation clip 'Idle'\n\tFrom animation clip 'Run'\n\tFrom animation clip 'Attack01'\n\tFrom
-    animation clip 'Attack02'\n\tFrom animation clip 'Damage'\n\tFrom animation clip
-    'Dead'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
