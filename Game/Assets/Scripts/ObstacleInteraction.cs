@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ObstacleInteraction : MonoBehaviour {
+    public AudioClip door;
 
     private void OnTriggerEnter(Collider c)
     {
@@ -13,7 +14,8 @@ public class ObstacleInteraction : MonoBehaviour {
             KeyCollector bc = c.attachedRigidbody.gameObject.GetComponent<KeyCollector>();
             if (bc.hasKey){
                 AudioSource door_open = GetComponent<AudioSource>();
-                door_open.Play();
+                //door_open.Play();
+                door_open.PlayOneShot(door, 2F);
                 Destroy(this.gameObject, 1F);
             }
         }
