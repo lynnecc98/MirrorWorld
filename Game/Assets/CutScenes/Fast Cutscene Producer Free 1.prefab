@@ -147,16 +147,18 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4844980673268152}
-  - component: {fileID: 114213563479231736}
-  - component: {fileID: 114774849306936298}
-  - component: {fileID: 114856500660088864}
-  - component: {fileID: 114025965016103474}
-  - component: {fileID: 114929767120999548}
-  - component: {fileID: 114895073169704368}
-  - component: {fileID: 114815320604496100}
-  - component: {fileID: 114360057739331412}
-  - component: {fileID: 114783809015559966}
-  - component: {fileID: 114009003506545500}
+  - component: {fileID: 114514273454169148}
+  - component: {fileID: 114382203140746422}
+  - component: {fileID: 114661928830482524}
+  - component: {fileID: 114586080280153842}
+  - component: {fileID: 114785129103978084}
+  - component: {fileID: 114567906698574810}
+  - component: {fileID: 114720689349837686}
+  - component: {fileID: 114120083345530956}
+  - component: {fileID: 114382754187137158}
+  - component: {fileID: 114788413893546356}
+  - component: {fileID: 114417488428649386}
+  - component: {fileID: 114404663145789352}
   m_Layer: 0
   m_Name: CutsceneScript
   m_TagString: Untagged
@@ -278,10 +280,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4530486594578540}
-  - component: {fileID: 114969521134036028}
-  - component: {fileID: 114173008970618500}
-  - component: {fileID: 114617920036615826}
-  - component: {fileID: 114848459542317966}
+  - component: {fileID: 114257303614223796}
+  - component: {fileID: 114855077082787100}
+  - component: {fileID: 114157660042292870}
+  - component: {fileID: 114565871556511134}
+  - component: {fileID: 114560700171759296}
+  - component: {fileID: 114691876231327450}
+  - component: {fileID: 114110319748876040}
+  - component: {fileID: 114231618515121968}
   m_Layer: 0
   m_Name: MainCutscene
   m_TagString: Untagged
@@ -371,6 +377,8 @@ GameObject:
   - component: {fileID: 4748195040502700}
   - component: {fileID: 114568889441467712}
   - component: {fileID: 114806383672890794}
+  - component: {fileID: 114473185246898830}
+  - component: {fileID: 114765466327251302}
   m_Layer: 0
   m_Name: CutsceneScript
   m_TagString: Untagged
@@ -446,40 +454,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114009003506545500
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Green ACTION=rotateBy ANIMATION=Happy KEEPORIGINALROTATION=FALSE
-      DESACCEL=FALSE ASYNC=FALSE INTERVAL=0 ANGLE=3 SPEED=10
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114848459542317966}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
 --- !u!114 &114017988440905208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -502,40 +476,6 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
---- !u!114 &114025965016103474
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Red ACTION=rotateBy ANIMATION=Happy KEEPORIGINALROTATION=FALSE
-      DESACCEL=FALSE ASYNC=TRUE INTERVAL=0 ANGLE=360 SPEED=300
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114173008970618500}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
 --- !u!114 &114076672696157200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -589,6 +529,67 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &114110319748876040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781737953757118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: particle
+  actorTransform: {fileID: 0}
+  pivotRotationCenter: {x: 0, y: 0, z: 0}
+  topBalloonXdistance: 0
+  topBalloonYdistance: 0
+  bottomBalloonXdistance: 0
+  bottomBalloonYdistance: 0
+  animator: {fileID: 0}
+  usedAnimationStateNames: []
+  comicsPanelRectTransform: {fileID: 0}
+  actorTransformCamera: {fileID: 0}
+  producer: {fileID: 0}
+  director: {fileID: 114560700171759296}
+  animatorController: {fileID: 0}
+  hasAnimations: 0
+  canUseRelativeCoordinates: 0
+--- !u!114 &114120083345530956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=player_after ACTION=goToTeleporting KEEPORIGINALROTATION=FALSE
+      DESACCEL=FALSE ASYNC=FALSE INTERVAL=0 X=30.7 Y=0.1 Z=74
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114691876231327450}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
 --- !u!114 &114125060509372514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -683,7 +684,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
---- !u!114 &114173008970618500
+--- !u!114 &114157660042292870
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -694,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorName: Red
+  actorName: mirror
   actorTransform: {fileID: 0}
   pivotRotationCenter: {x: 0, y: 0, z: 0}
   topBalloonXdistance: 0
@@ -702,18 +703,13 @@ MonoBehaviour:
   bottomBalloonXdistance: 0
   bottomBalloonYdistance: 0
   animator: {fileID: 0}
-  usedAnimationStateNames:
-  - Idle
-  - Happy
-  - Sad
-  - Startled
-  - ThrowFish
+  usedAnimationStateNames: []
   comicsPanelRectTransform: {fileID: 0}
   actorTransformCamera: {fileID: 0}
   producer: {fileID: 0}
-  director: {fileID: 114969521134036028}
-  animatorController: {fileID: 9100000, guid: c3498580770172a4bb4cfe88aa59ea4c, type: 2}
-  hasAnimations: 1
+  director: {fileID: 114560700171759296}
+  animatorController: {fileID: 0}
+  hasAnimations: 0
   canUseRelativeCoordinates: 0
 --- !u!114 &114207449257715100
 MonoBehaviour:
@@ -742,40 +738,60 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114213563479231736
+--- !u!114 &114231618515121968
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
+  m_GameObject: {fileID: 1781737953757118}
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Green ACTION=goTo ANIMATION=Idle KEEPORIGINALROTATION=TRUE ASYNC=FALSE
-      INTERVAL=0 X=3.71 Y=0.7 Z=3.23 SPEED=3 DESACCEL=FALSE
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114848459542317966}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
+  actorName: cam3
+  actorTransform: {fileID: 0}
+  pivotRotationCenter: {x: 0, y: 0, z: 0}
+  topBalloonXdistance: 0
+  topBalloonYdistance: 0
+  bottomBalloonXdistance: 0
+  bottomBalloonYdistance: 0
+  animator: {fileID: 0}
+  usedAnimationStateNames: []
+  comicsPanelRectTransform: {fileID: 0}
+  actorTransformCamera: {fileID: 0}
+  producer: {fileID: 0}
+  director: {fileID: 114560700171759296}
+  animatorController: {fileID: 0}
+  hasAnimations: 0
+  canUseRelativeCoordinates: 0
+--- !u!114 &114257303614223796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781737953757118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: cam2
+  actorTransform: {fileID: 0}
+  pivotRotationCenter: {x: 0, y: 0, z: 0}
+  topBalloonXdistance: 0
+  topBalloonYdistance: 0
+  bottomBalloonXdistance: 0
+  bottomBalloonYdistance: 0
+  animator: {fileID: 0}
+  usedAnimationStateNames: []
+  comicsPanelRectTransform: {fileID: 0}
+  actorTransformCamera: {fileID: 0}
+  producer: {fileID: 0}
+  director: {fileID: 114560700171759296}
+  animatorController: {fileID: 0}
+  hasAnimations: 0
+  canUseRelativeCoordinates: 0
 --- !u!114 &114354314690297512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -823,40 +839,6 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "I can already see the control room from here... \nThat seems to be the
     pilot's cabin, \nbut there's no one inside."
---- !u!114 &114360057739331412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Red ACTION=rotateBy ANIMATION=Happy KEEPORIGINALROTATION=FALSE
-      DESACCEL=FALSE ASYNC=TRUE INTERVAL=0 ANGLE=30 SPEED=20
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114173008970618500}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
 --- !u!114 &114372298368995682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -870,6 +852,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &114382203140746422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=cam1 ACTION=goTo KEEPORIGINALROTATION=TRUE ASYNC=FALSE INTERVAL=0
+      X=30.67 Y=1.5 Z=77 SPEED=3 DESACCEL=FALSE
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114855077082787100}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
+--- !u!114 &114382754187137158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=cam2 ACTION=exit KEEPORIGINALROTATION=FALSE DESACCEL=FALSE ASYNC=TRUE
+      INTERVAL=1
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114257303614223796}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
 --- !u!114 &114389598749690416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -883,6 +933,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &114404663145789352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=player_after ACTION=goToAccelerating ANIMATION=Falling KEEPORIGINALROTATION=TRUE
+      DESACCEL=FALSE ASYNC=FALSE INTERVAL=0 X=30.7 Y=50 Z=80 SPEED=1 ACCELERATION=1
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114691876231327450}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
+--- !u!114 &114417488428649386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=player_after ACTION=subtitles BLINKRATE=2 KEEPORIGINALROTATION=FALSE
+      DESACCEL=FALSE ASYNC=FALSE INTERVAL=0 TEXT=I can escape now!
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114691876231327450}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
 --- !u!114 &114444245538436158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -944,6 +1062,40 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114473185246898830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1933849258965750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=Main ACTION=exit KEEPORIGINALROTATION=FALSE DESACCEL=FALSE ASYNC=FALSE
+      INTERVAL=10
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114125060509372514}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
 --- !u!114 &114479536695719310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1000,6 +1152,133 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &114514273454169148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=player ACTION=goTo KEEPORIGINALROTATION=TRUE ASYNC=TRUE INTERVAL=0
+      X=30.7 Y=0.1 Z=74 SPEED=5 DESACCEL=TRUE
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114565871556511134}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
+--- !u!114 &114560700171759296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781737953757118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e71798a8e1975fa428862fde656e8664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standaloneDialogueEditorPath: 
+  comicsFont: {fileID: 0}
+  comicsFontSize: 24
+  subtitlesFont: {fileID: 0}
+  subtitlesFontSize: 40
+  subtitlesHeaderFont: {fileID: 0}
+  subtitlesHeaderFontSize: 40
+  hasActorNameHeader: 0
+  subtitlesBackgroundSprite: {fileID: 0}
+  verticalPadding: 0
+  horizontalPadding: 0
+  hasText: 1
+  hasCustomSubtitlesStyle: 0
+  hasCustomComicsStyle: 0
+  hasBackgroundImage: 0
+  hasText_subtitlesBalloonsOrBoth: 0
+  isInLine: 0
+  isLayoutFlexible: 1
+  scriptLayout: 0
+  cutsceneScriptParts:
+  - {fileID: 1390595087039514}
+--- !u!114 &114565871556511134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781737953757118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: player
+  actorTransform: {fileID: 0}
+  pivotRotationCenter: {x: 0, y: 0, z: 0}
+  topBalloonXdistance: 0
+  topBalloonYdistance: 0
+  bottomBalloonXdistance: 0
+  bottomBalloonYdistance: 0
+  animator: {fileID: 0}
+  usedAnimationStateNames: []
+  comicsPanelRectTransform: {fileID: 0}
+  actorTransformCamera: {fileID: 0}
+  producer: {fileID: 0}
+  director: {fileID: 114560700171759296}
+  animatorController: {fileID: 0}
+  hasAnimations: 0
+  canUseRelativeCoordinates: 0
+--- !u!114 &114567906698574810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=particle ACTION=goToTeleporting KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=FALSE INTERVAL=0 X=30.69 Y=0.24 Z=74
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114110319748876040}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
 --- !u!114 &114568889441467712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1012,8 +1291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineType:
-    lineString: ACTOR=Main ACTION=enter KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
-      ASYNC=FALSE FADETIME=0 INTERVAL=0
+    lineString: ACTOR=Panel ACTION=exit FADETIME=0 KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=FALSE INTERVAL=0
     booleanKeys:
     - ASYNC
     - DESACCEL
@@ -1025,7 +1304,7 @@ MonoBehaviour:
     - YTYPE
     - TEXT
     - ANIMATION
-  actor: {fileID: 114125060509372514}
+  actor: {fileID: 114885785467868976}
   goTos:
   - goTo
   - goToAccelerating
@@ -1083,6 +1362,40 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &114586080280153842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=cam1 ACTION=exit KEEPORIGINALROTATION=FALSE DESACCEL=FALSE ASYNC=FALSE
+      INTERVAL=1
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114855077082787100}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
 --- !u!114 &114592204034593696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1118,38 +1431,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!114 &114617920036615826
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1781737953757118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actorName: Blue
-  actorTransform: {fileID: 0}
-  pivotRotationCenter: {x: 0, y: 0, z: 0}
-  topBalloonXdistance: 0
-  topBalloonYdistance: 0
-  bottomBalloonXdistance: 0
-  bottomBalloonYdistance: 0
-  animator: {fileID: 0}
-  usedAnimationStateNames:
-  - Idle
-  - Sad
-  - Happy
-  - Startled
-  - ThrowFish
-  comicsPanelRectTransform: {fileID: 0}
-  actorTransformCamera: {fileID: 0}
-  producer: {fileID: 0}
-  director: {fileID: 114969521134036028}
-  animatorController: {fileID: 9100000, guid: c3498580770172a4bb4cfe88aa59ea4c, type: 2}
-  hasAnimations: 1
-  canUseRelativeCoordinates: 0
 --- !u!114 &114656281475168082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1204,20 +1485,20 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
---- !u!114 &114774849306936298
+--- !u!114 &114661928830482524
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineType:
-    lineString: ACTOR=Green ACTION=goTo ANIMATION=Idle KEEPORIGINALROTATION=TRUE ASYNC=TRUE
-      INTERVAL=0 X=3.71 Y=0 Z=3.23 SPEED=3 DESACCEL=FALSE
+    lineString: ACTOR=player ACTION=subtitles KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=FALSE INTERVAL=0 TEXT=Yes, I remember. This is who I am.
     booleanKeys:
     - ASYNC
     - DESACCEL
@@ -1229,7 +1510,7 @@ MonoBehaviour:
     - YTYPE
     - TEXT
     - ANIMATION
-  actor: {fileID: 114848459542317966}
+  actor: {fileID: 114565871556511134}
   goTos:
   - goTo
   - goToAccelerating
@@ -1238,20 +1519,49 @@ MonoBehaviour:
   - rotateBy
   - rotateTo
   - rotateTowards
---- !u!114 &114783809015559966
+--- !u!114 &114691876231327450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781737953757118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: player_after
+  actorTransform: {fileID: 0}
+  pivotRotationCenter: {x: 0, y: 0, z: 0}
+  topBalloonXdistance: 0
+  topBalloonYdistance: 0
+  bottomBalloonXdistance: 0
+  bottomBalloonYdistance: 0
+  animator: {fileID: 0}
+  usedAnimationStateNames:
+  - Idle
+  - Falling
+  comicsPanelRectTransform: {fileID: 0}
+  actorTransformCamera: {fileID: 0}
+  producer: {fileID: 0}
+  director: {fileID: 114560700171759296}
+  animatorController: {fileID: 9100000, guid: 4f9f8f816a444be4dbc551002f7b03e3, type: 2}
+  hasAnimations: 1
+  canUseRelativeCoordinates: 0
+--- !u!114 &114720689349837686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineType:
-    lineString: ACTOR=Blue ACTION=rotateBy ANIMATION=Happy KEEPORIGINALROTATION=FALSE
-      DESACCEL=FALSE ASYNC=TRUE INTERVAL=0 ANGLE=-30 SPEED=20
+    lineString: ACTOR=player ACTION=exit KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=FALSE INTERVAL=1
     booleanKeys:
     - ASYNC
     - DESACCEL
@@ -1263,7 +1573,109 @@ MonoBehaviour:
     - YTYPE
     - TEXT
     - ANIMATION
-  actor: {fileID: 114617920036615826}
+  actor: {fileID: 114565871556511134}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
+--- !u!114 &114765466327251302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1933849258965750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=Panel ACTION=enter KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=FALSE INTERVAL=0
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114885785467868976}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
+--- !u!114 &114785129103978084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=cam2 ACTION=enter KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=TRUE INTERVAL=1
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114257303614223796}
+  goTos:
+  - goTo
+  - goToAccelerating
+  - goToTeleporting
+  rotates:
+  - rotateBy
+  - rotateTo
+  - rotateTowards
+--- !u!114 &114788413893546356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390595087039514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineType:
+    lineString: ACTOR=cam3 ACTION=enter KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=FALSE INTERVAL=0
+    booleanKeys:
+    - ASYNC
+    - DESACCEL
+    - KEEPORIGINALROTATION
+    stringKeys:
+    - ACTOR
+    - ACTION
+    - XTYPE
+    - YTYPE
+    - TEXT
+    - ANIMATION
+  actor: {fileID: 114231618515121968}
   goTos:
   - goTo
   - goToAccelerating
@@ -1284,8 +1696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineType:
-    lineString: ACTOR=Main ACTION=exit KEEPORIGINALROTATION=FALSE DESACCEL=FALSE ASYNC=FALSE
-      INTERVAL=20
+    lineString: ACTOR=Main ACTION=enter KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
+      ASYNC=FALSE INTERVAL=0
     booleanKeys:
     - ASYNC
     - DESACCEL
@@ -1298,41 +1710,6 @@ MonoBehaviour:
     - TEXT
     - ANIMATION
   actor: {fileID: 114125060509372514}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
---- !u!114 &114815320604496100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Blue ACTION=subtitles KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
-      ASYNC=FALSE INTERVAL=3 TEXT=Let's take her identity and hide it! You may only
-      escape when you can remember who you are.
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114617920036615826}
   goTos:
   - goTo
   - goToAccelerating
@@ -1368,7 +1745,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114848459542317966
+--- !u!114 &114855077082787100
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1379,7 +1756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d8045f731e4cf4f8da4d34fbe01623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorName: Green
+  actorName: cam1
   actorTransform: {fileID: 0}
   pivotRotationCenter: {x: 0, y: 0, z: 0}
   topBalloonXdistance: 0
@@ -1387,53 +1764,14 @@ MonoBehaviour:
   bottomBalloonXdistance: 0
   bottomBalloonYdistance: 0
   animator: {fileID: 0}
-  usedAnimationStateNames:
-  - Idle
-  - Startled
-  - Happy
-  - Sad
-  - ThrowFish
+  usedAnimationStateNames: []
   comicsPanelRectTransform: {fileID: 0}
   actorTransformCamera: {fileID: 0}
   producer: {fileID: 0}
-  director: {fileID: 114969521134036028}
-  animatorController: {fileID: 9100000, guid: c3498580770172a4bb4cfe88aa59ea4c, type: 2}
-  hasAnimations: 1
+  director: {fileID: 114560700171759296}
+  animatorController: {fileID: 0}
+  hasAnimations: 0
   canUseRelativeCoordinates: 0
---- !u!114 &114856500660088864
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Green ACTION=subtitles KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
-      ASYNC=FALSE INTERVAL=0 TEXT=How did this human get in here? Let's send her back.
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114848459542317966}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
 --- !u!114 &114874833397449084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1474,75 +1812,6 @@ MonoBehaviour:
   animatorController: {fileID: 0}
   hasAnimations: 0
   canUseRelativeCoordinates: 0
---- !u!114 &114895073169704368
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Blue ACTION=subtitles KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
-      ASYNC=FALSE INTERVAL=1 TEXT=I know what to do!
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114617920036615826}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
---- !u!114 &114929767120999548
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390595087039514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147cfaf051a43d74f821eb3b146859eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineType:
-    lineString: ACTOR=Red ACTION=subtitles KEEPORIGINALROTATION=FALSE DESACCEL=FALSE
-      ASYNC=FALSE INTERVAL=0 TEXT=But not without a cost! She was probably trying
-      to steal our gems.
-    booleanKeys:
-    - ASYNC
-    - DESACCEL
-    - KEEPORIGINALROTATION
-    stringKeys:
-    - ACTOR
-    - ACTION
-    - XTYPE
-    - YTYPE
-    - TEXT
-    - ANIMATION
-  actor: {fileID: 114173008970618500}
-  goTos:
-  - goTo
-  - goToAccelerating
-  - goToTeleporting
-  rotates:
-  - rotateBy
-  - rotateTo
-  - rotateTowards
 --- !u!114 &114930355677182790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1641,38 +1910,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114969521134036028
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1781737953757118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e71798a8e1975fa428862fde656e8664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  standaloneDialogueEditorPath: C:\Works\Code\Team Runner\Standalone Dialogue Editor
-  comicsFont: {fileID: 12800000, guid: 27646980ee8b150448358645f81ec172, type: 3}
-  comicsFontSize: 24
-  subtitlesFont: {fileID: 0}
-  subtitlesFontSize: 36
-  subtitlesHeaderFont: {fileID: 0}
-  subtitlesHeaderFontSize: 40
-  hasActorNameHeader: 1
-  subtitlesBackgroundSprite: {fileID: 0}
-  verticalPadding: 0
-  horizontalPadding: 0
-  hasText: 1
-  hasCustomSubtitlesStyle: 1
-  hasCustomComicsStyle: 0
-  hasBackgroundImage: 0
-  hasText_subtitlesBalloonsOrBoth: 0
-  isInLine: 1
-  isLayoutFlexible: 1
-  scriptLayout: 2
-  cutsceneScriptParts:
-  - {fileID: 1390595087039514}
 --- !u!114 &114980435818039772
 MonoBehaviour:
   m_ObjectHideFlags: 1
