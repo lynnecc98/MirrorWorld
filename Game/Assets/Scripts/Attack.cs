@@ -15,7 +15,6 @@ public class Attack : MonoBehaviour {
 
     public GameObject[] obj;
 
-    int shootableMask;
     float timer;
     float shootingTimer;
 
@@ -29,7 +28,6 @@ public class Attack : MonoBehaviour {
 
     void Awake()
     {
-        shootableMask = LayerMask.GetMask("Shootable");
         element = GetComponent<elementType>();
         curElement = element.element;
         anim = GetComponent<Animator>();

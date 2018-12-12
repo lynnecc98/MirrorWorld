@@ -6,7 +6,6 @@ public class BoatMove : MonoBehaviour {
 
     public GameObject player;
     bool onBoat = false;
-    float counter = 0;
     Vector3 oldpos;
     //Quaternion oldrot;
 

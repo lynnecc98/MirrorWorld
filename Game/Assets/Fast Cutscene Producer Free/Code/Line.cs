@@ -546,7 +546,9 @@ public class LineType {
 				value = float.Parse (value).ToString ();
 				replaceValue (key, value);
 			} 
-			catch (Exception e) {	}
+			catch (Exception e) {
+                Debug.LogException(e);
+            }
 		} 
 		else {
 			replaceValue (key, value);

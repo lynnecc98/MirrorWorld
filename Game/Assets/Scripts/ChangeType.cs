@@ -35,7 +35,6 @@ public class ChangeType : MonoBehaviour
     public Material currentMaterial;
     public Material redM, greenM, blueM;
     elementType element;
-    List<Material> mats;
     public GameObject Object;
     // Use this for initialization
     void Start()
@@ -45,7 +44,6 @@ public class ChangeType : MonoBehaviour
         blue = new Type("Blue", 0);
         element = GetComponent<elementType>();
         // define the materials
-        mats = new List<Material>(new Material[] { redM, greenM, blueM });
         Object.GetComponent<SkinnedMeshRenderer>().material = currentMaterial;
         element.element = Element.Neutral;
     }

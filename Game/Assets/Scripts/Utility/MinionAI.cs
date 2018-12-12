@@ -11,7 +11,7 @@ public class MinionAI : MonoBehaviour {
     public GameObject[] waypoints;
     int currWaypoint;
     Vector3 finalDes;
-    Vector3 m, direction;
+    Vector3 m;
     enum AIState { Stationary, Moving };
     AIState aiState;
     float t;
@@ -87,7 +87,6 @@ public class MinionAI : MonoBehaviour {
         Vector3 vel = (waypointVelocity - minionVelcoty);
         t = pos.magnitude / vel.magnitude;
         m = waypointVelocity * t;
-        direction = this.transform.forward;
         finalDes = new Vector3(m.x + waypointPosition.x, m.y + waypointPosition.y, m.z + waypointPosition.z);
         navMesh.SetDestination(finalDes);
     }
