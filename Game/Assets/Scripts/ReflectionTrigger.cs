@@ -26,7 +26,12 @@ public class ReflectionTrigger : MonoBehaviour {
 
                 if (myElement.element == player.GetComponent<elementType>().element)
                 {
-                    SceneManager.LoadScene("WinScene");
+                    if (myElement.element == Element.Red)
+                        SceneManager.LoadScene("WinScene_red");
+                    if (myElement.element == Element.Blue)
+                        SceneManager.LoadScene("WinScene_blue");
+                    if (myElement.element == Element.Green)
+                        SceneManager.LoadScene("WinScene_green");
                 }
                 else
                 {
